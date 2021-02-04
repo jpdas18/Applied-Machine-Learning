@@ -1,0 +1,8 @@
+## Informal Exercise Response:
+## Question 1: In Laurence Maroney's video "What is ML", he compares traditional programming with machine learning and argues that the main difference between the two is a reorientation of the rules, data, and answers. According to Maroney, what is the difference between traditional programming and machine learning?
+## Maroney described traditional programming as the inputting data and rules and the outputting of answers. However, machine learning is relevant when there are lots of data and answers but no rules. Machine learning takes in the data and answers and outputs the rules, so that people can better understand and predict. 
+
+## Question 2: With the first basic script that Maroney used to predict a value output from the model he estimated (he initially started with 10 that predicted ~31). Modify the predict function to produce the output for the value 7. Do this twice and provide both answers. Are they the same? Are they different? Why is this so?
+## When using the same model to predict an output for the value 7, I get the same answer both times. 
+
+## Using the script you produced to predict housing price, take the provided six houses and train a neural net model that estimates the relationship between them. Based on this model, which of the six homes present a good deal? Which one is the worst deal? 
