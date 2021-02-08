@@ -22,3 +22,4 @@
 ### 
 ### 6. Produce a plot of your selected image and the accompanying histogram that illustrates the probability of that image being the selected number. 
 
+
