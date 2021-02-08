@@ -1,4 +1,4 @@
-## Informal Exercise Response:
+## Feb 3 Informal Exercise Response:
 ### Jacinta Das
 #### Question 1: In Laurence Moroney's video "What is ML", he compares traditional programming with machine learning and argues that the main difference between the two is a reorientation of the rules, data, and answers. According to Moroney, what is the difference between traditional programming and machine learning?
 #### Moroney thinks of programming as a configuration of data, rules, and answers. He describes traditional programming as the inputting of data and rules and the output is the answers. In traditional programming, programmers are generally responsible for determining the rules through the code, which output answers based on the data. Machine learning is relevant when there are lots of data and answers but no rules. Machine learning takes in the data and answers and outputs the rules, so that people can better understand and predict. 
