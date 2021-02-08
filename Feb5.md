@@ -21,4 +21,4 @@
 ### 5. Use np.argmax() with your predictions object to return the numeral with the highest probability from the test labels dataset.
 ### I got a numeral of 1.
 ### 6. Produce a plot of your selected image and the accompanying histogram that illustrates the probability of that image being the selected number. 
-![Plot](myplot.png)
+![Plot](myplotyes.png)
