@@ -5,4 +5,4 @@
 | 760 New Point Comfort Highway | 5 | 3051 | x | x | 347.5k |
 | 6138 East River Rd | 4 | 3524 | x | x | 289k |
 | Moon | 2 | 1479 | x | x | 250k |
-| 4403 New Point Comfort Highway | 4 | 2840 | x | x | 229k |
+| 4403 New Point Comfort Highway | 3 | 2840 | x | x | 229k |
