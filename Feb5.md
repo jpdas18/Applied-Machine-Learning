@@ -22,6 +22,5 @@
 ### I got a numeral of 5.
 ### 6. Produce a plot of your selected image and the accompanying histogram that illustrates the probability of that image being the selected number. 
 ![Plot](myplotyes.png)
-array([5.4007878e-09, 1.3414155e-11, 1.7001489e-10, 4.1967865e-05,
-       3.1919257e-12, 9.9995732e-01, 7.3873497e-14, 8.1238278e-09,
-       6.7425572e-07, 5.4351094e-08], dtype=float32)
+
+### array([5.4007878e-09, 1.3414155e-11, 1.7001489e-10, 4.1967865e-05,3.1919257e-12, 9.9995732e-01, 7.3873497e-14, 8.1238278e-09,6.7425572e-07, 5.4351094e-08], dtype=float32)
