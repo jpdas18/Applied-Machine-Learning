@@ -19,6 +19,9 @@
 ### There are 10,000 images in the test set. The dimension of each images is 28 by 28 pixels.
 ### 4. Estimate a probability model and apply it to the test set in order to produce the array of probabilities that a randomly selected image is each of the possible numeric outcomes (look towards the end of the basic image classification exercises for how to do this - you can apply the same method applied to the Fashion MNIST dataset but now apply it to the hand written letters MNIST dataset.)
 ### 5. Use np.argmax() with your predictions object to return the numeral with the highest probability from the test labels dataset.
-### I got a numeral of 1.
+### I got a numeral of 5.
 ### 6. Produce a plot of your selected image and the accompanying histogram that illustrates the probability of that image being the selected number. 
 ![Plot](myplotyes.png)
+array([5.4007878e-09, 1.3414155e-11, 1.7001489e-10, 4.1967865e-05,
+       3.1919257e-12, 9.9995732e-01, 7.3873497e-14, 8.1238278e-09,
+       6.7425572e-07, 5.4351094e-08], dtype=float32)
