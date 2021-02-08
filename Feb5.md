@@ -7,7 +7,7 @@
 ### The second layer is a Dense layer with 128 neurons and a relu function in the activation argument. The relu function ensures that the output of a neuron is greater than or equal to zero, so that negative outputs don't skew results. The last layer is a Dense layer with ten neurons and a softmax function in the activaton argument. There are ten neurons in the last layer because there are ten different types of clothing in the dataset; the job of each of these neurons is to calculate the probability that a piece of clothing is that particular type. The softmax function sets the neuron with the largest probability to 1 and the rest to 0, so the object is classified as one type of clothing. 
 
 ### C. In the past example, we used the optimizer and loss function, while in this one we are using the function adam in the optimizer argument and sparse_categorical-crossentropy for the loss argument. How do the optimizer and loss functions operate to produce model parameters within the model.compile() function?
-### The loss function determines the loss between the model's answer and the correct answer. The loss function informs optimizers, which update the model's weights and biases accordingly, thereby improving accuracy with each epoch.
+### The loss function determines the disparity between the model's answer and the correct answer. The loss function informs optimizers, which update the model's weights and biases accordingly, thereby reducing the loss with each update.
 
 
 ### D. Using the mnist drawings dataset, answer the following questions:
