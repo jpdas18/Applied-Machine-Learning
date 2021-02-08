@@ -4,5 +4,6 @@
 
 ## Informal Exercises
 - [Feb 3](https://github.com/jpdas18/Applied-Machine-Learning/blob/main/Feb3.md)
+- [Feb 3 Update](https://github.com/jpdas18/Applied-Machine-Learning/blob/main/Feb_3_Excercise_Updated.md)
 
 ## Projects 
