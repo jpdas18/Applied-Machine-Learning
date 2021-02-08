@@ -12,13 +12,12 @@
 
 ### D. Using the mnist drawings dataset, answer the following questions:
 ### 1. What is the shape of the images training set (how many and the dimension of each)? 
-### There are 60,000 images in the training set, and the dimension of each image is 28 by 28.
+### There are 60,000 images in the training set, and the dimension of each image is 28 by 28 pixels.
 ### 2. what is the length of the labels training set?
-### The length of the labels training set is 60,000.
+### The length of the labels training set is 60,000; each label corresponds to an image.
 ### 3. What is the shape of the images test set?
-### The dimension of the images test set is 28 by 28.
+### There are 10,000 images in the test set. The dimension of each images is 28 by 28 pixels.
 ### 4. Estimate a probability model and apply it to the test set in order to produce the array of probabilities that a randomly selected image is each of the possible numeric outcomes (look towards the end of the basic image classification exercises for how to do this - you can apply the same method applied to the Fashino MNIST dataset but now apply it to the hand written letters MNIST dataset.)
-
 ### 5. Use np.argmax() with your predictions object to return the numeral with the highest probability from the test labels dataset.
 ### 
 ### 6. Produce a plot of your selected image and the accompanying histogram that illustrates the probability of that image being the selected number. 
