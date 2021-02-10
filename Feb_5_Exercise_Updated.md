@@ -2,7 +2,6 @@
 #### probability_model = tf.keras.Sequential([model, tf.keras.layers.Softmax()])
 #### predictions = probability_model.predict(test_images)
 ### 5. Use np.argmax() with your predictions object to return the numeral with the highest probability from the test labels dataset. 
-
-### I got a numeral of 5.
+### For the index of 0, I got the numeral 7.
 ### 6. Produce a plot of your selected image and the accompanying histogram that illustrates the probability of that image being the selected number. 
 ![Plot](download.png)
