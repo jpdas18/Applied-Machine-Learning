@@ -9,3 +9,4 @@
 - [Feb 5 Update](https://jpdas18.github.io/Applied-Machine-Learning/Feb_5_Exercise_Updated.html)
 
 ## Projects 
+- [Mini Project 1](https://jpdas18.github.io/Applied-Machine-Learning/Mini_Project_1.html)
