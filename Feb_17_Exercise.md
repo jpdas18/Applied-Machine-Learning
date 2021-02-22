@@ -44,4 +44,6 @@
 
 #### This is my image after applying filter = [ [2, 2, 2], [1, 1, 1], [0, 0, 1]]. It does not look that different. I wonder if it would be changed more if there were a few large values. 
 
-#### This is my image after applying filter = [ [8, 0, 0], [1, 0, 1], [0, 0, 0]]. 
+![Plot](image_9_feb21.png)
+
+#### This is my image after applying filter = [ [8, 0, 0], [1, 0, 1], [0, 0, 0]]. It also does not look different.
