@@ -10,9 +10,15 @@
 
 ![Plot](image_3_feb21.png)
 
-#### This image was created by applying the filter = [ [0, 1, 0], [1, -8, 1], [0, 1, 0]]. It is extremely dark; this must have been caused by the change from -4 in its position to -8. I am curious to see what happens when the number in that middle position is increased.
+#### This image was created by applying the filter = [ [0, 1, 0], [1, -8, 1], [0, 1, 0]]. It is extremely dark; this must have been caused by the change from -4 in its position to -8. I am curious to see what happens when the number in that middle position [1,1] is increased.
+
+![Plot](image_3_feb21.png)
+
+#### This image was created by applying the filter = [ [0, 1, 0], [1, 4, 1], [0, 1, 0]]. It is clearly much lighter than the other filtered images. I conclude that increasing the number in the position [1,1] makes the image lighter while decreasing it darkens the image. 
 
 #### Question 2: What are you functionally accomplishing as you apply the filter to your original array (see the following snippet for reference)? Why is the application of a convolving filter to an image useful for computer vision? 
+
+#### The filter is assigning each current pixel a new value. It does this by multiplying all adjacent pixels and the current pixel by the corresponding value in the 3x3 array and summing them. The sum then gets multiplied by a weight which may function to normalize the value of the pixel. If this value is less than 0, it is set to be equal to 0 which I am assuming would be white. If the value is greater than 255, it is set to be equal to 255 which I am assuming would be black. The applicaiton of a convolving filter to an image is useful for computer vision because it can emphasize certain features of the image, making it easier for the computer to recognize key characteristics. For example, the default filter emphasized vertical lines, making it more obvious that the picture was of a staircase and walkway. 
 
 #### Question 3: Another useful method is pooling. Apply a 2x2 filter to one of your convolved images, and plot the result. In effect what have you accomplished by applying this filter? Does there seem to be a logic (i.e. maximizing, averaging or minimizing values?) associated with the pooling filter provided in the example exercise (convolutions & pooling)? Did the resulting image increase in size or decrease? Why would this method be useful?
 
