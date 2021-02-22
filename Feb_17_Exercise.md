@@ -36,7 +36,7 @@
 
 #### This is the image after applying the default convolving filter from the exercise.  filter = [ [-1, -2, -1], [0, 0, 0], [1, 2, 1]] 
 
-![Plot](image_7_feb21.png)
+![Plot](image_6_feb21.png)
 
 #### I decided to grayscale the image before applying more filters.
 
