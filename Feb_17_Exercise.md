@@ -22,6 +22,8 @@
 
 #### Question 3: Another useful method is pooling. Apply a 2x2 filter to one of your convolved images, and plot the result. In effect what have you accomplished by applying this filter? Does there seem to be a logic (i.e. maximizing, averaging or minimizing values?) associated with the pooling filter provided in the example exercise (convolutions & pooling)? Did the resulting image increase in size or decrease? Why would this method be useful?
 
-#### Question 4: Convolve the 3x3 filter over the 9x9 matrix and provide the resulting matrix. 
+![Plot](image_5_feb21.png)
+
+#### By applying this filter, I have condensed the image to a quarter of its original size while preserving important features. This is helpful because it is smaller and there is less for a computer to process; however, the important information is still present. The logic of this filter is that it skips every other pixel. This seems to be a random method of pooling the image; it is not the same as maximizing, minimizing, or averaging. 
 
 #### Stretch goal: instead of using the misc.ascent() image from scipy, can you apply three filters and weights to your own selected image? Again describe the results. Again, instead of using misc.ascent(), apply the pooling filter to one of your transformed images.
