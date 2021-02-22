@@ -4,7 +4,7 @@
 
 #### The first image was created by applying the existing filter. filter = [ [-1, -2, -1], [0, 0, 0], [1, 2, 1]] This filter did a good job of emphasizing vertical lines. The next three filter will be my own; by playing around with the filters, I will get a better idea of how I can manipulate an image for computer vision.
 
-![Plot](image_1_feb21.png)
+![Plot](image_2_feb21.png)
 
 #### This image was created by applying the filter = [ [0, 1, 0], [1, -4, 1], [0, 1, 0]]. It appears to make the image much darker. I wonder if that is because the number applied to the current pixel is -4. I am curious to see what happens if I increase or decrease the number in that position.
 
