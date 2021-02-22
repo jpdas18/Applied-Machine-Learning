@@ -28,7 +28,7 @@
 
 #### Stretch goal: instead of using the misc.ascent() image from scipy, can you apply three filters and weights to your own selected image? Again describe the results. Again, instead of using misc.ascent(), apply the pooling filter to one of your transformed images.
 
-![Plot](image_feb21.png)
+![Plot](image_feb21.jpg)
 
 #### This is an image of my favorite sweet. I will be applying filters to it.
 
