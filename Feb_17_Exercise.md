@@ -27,3 +27,11 @@
 #### By applying this filter, I have condensed the image to a quarter of its original size while preserving important features. This is helpful because it is smaller and there is less for a computer to process; however, the important information is still present. The logic of this filter is that it skips every other pixel. This seems to be a random method of pooling the image; it is not the same as maximizing, minimizing, or averaging. 
 
 #### Stretch goal: instead of using the misc.ascent() image from scipy, can you apply three filters and weights to your own selected image? Again describe the results. Again, instead of using misc.ascent(), apply the pooling filter to one of your transformed images.
+
+![Plot](image_feb21.png)
+
+#### This is an image of my favorite sweet. I will be applying filters to it.
+
+![Plot](image_7_feb21.png)
+
+#### This is the image after applying the default convolving filter from the exercise.  filter = [ [-1, -2, -1], [0, 0, 0], [1, 2, 1]] 
