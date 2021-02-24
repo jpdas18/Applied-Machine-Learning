@@ -47,3 +47,5 @@
 ![Plot](image_9_feb21.png)
 
 #### This is my image after applying filter = [ [8, 0, 0], [1, 0, 1], [0, 0, 0]]. It also does not look different.
+
+![Plot](IMG_20210223_212438.jpg)
