@@ -8,7 +8,7 @@
 - [Feb 5](https://jpdas18.github.io/Applied-Machine-Learning/Feb5.html)
 - [Feb 5 Update](https://jpdas18.github.io/Applied-Machine-Learning/Feb_5_Exercise_Updated.html)
 - [Feb 17](https://jpdas18.github.io/Applied-Machine-Learning/Feb_17_Exercise.html)
-- [Convolutions Exercise](https://jpdas18.github.io/Applied-Machine-Learning/Convolutions_Exercise_Feb24.html)
+- [Convolutions Exercise](https://jpdas18.github.io/Applied-Machine-Learning/Convolutions_Feb24_Exercise.html)
 
 ## Projects 
 - [Mini Project 1](https://jpdas18.github.io/Applied-Machine-Learning/Mini_Project_1.html)
