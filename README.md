@@ -1,7 +1,7 @@
 # Applied-Machine-Learning
 ## Jacinta Das
 #### classwork and projects for DATA 310 at William &amp; Mary, spring 2021
-
+### Module 1:
 ## Informal Exercises
 - [Feb 3](https://jpdas18.github.io/Applied-Machine-Learning/Feb3.html)
 - [Feb 3 Update](https://jpdas18.github.io/Applied-Machine-Learning/Feb_3_Exercise_Updated.html)
@@ -10,5 +10,6 @@
 - [Feb 17](https://jpdas18.github.io/Applied-Machine-Learning/Feb_17_Exercise.html)
 - [Convolutions Exercise](https://jpdas18.github.io/Applied-Machine-Learning/Convolutions_Feb24_Exercise.html)
 
-## Projects 
+## Projects
+### Module 1:
 - [Mini Project 1](https://jpdas18.github.io/Applied-Machine-Learning/Mini_Project_1.html)
