@@ -1,0 +1,9 @@
+### From your 400+ observations of homes for sale, calculate MSE for the following...
+#### The 10 biggest over-predictions
+#### The 10 biggest under-predictions
+#### The 10 most accurate results
+
+#### In which percentile do the 10 most accurate predictions reside? Did your model trend towards over or under predicting home values?
+#### Which feature appears to be the most significant predictor in the above cases?
+
+#### Stretch goal: calculate the MAE and compare with your MSE results
