@@ -6,7 +6,10 @@
 #### I then assigned an x(i) for each of the features. X1 is number of bedrooms, X2 is number of bathrooms, X3 is square footage, and X4 is zip code. I created a colum in the data frame for the zip code associated with each home bt splitting the string of the address after the state because zip code is always listed after state. I created a target variable which contained house prices. I made all the features and the target float types.
 #### I then normalized my data by dividing my x3, which represents square footage, by 1000 and y, house prices, by 100000.
 #### I created a Sequential model with one dense layer that takes an input shape equal to 4. (ELABORATE) I compiled my model with a stochastic gradient descent optimizer and a loss function using mean squared error. 
-#### Following the previous model you specified (6 houses in Mathews), import your new data set and train a new model on your target and features.
+#### I then stacked my features, x values x1, x2, x3, x4, and fit the model to my features and target. I used ten epochs because I wanted to see if it would run. It turns out that it generated a loss equal to Nan, and when I created a column y_pred for model predictions, all y_pred values equaled Nan.
+#### I decided to go back and remove my variable for zip code to see if my model would work without it. I repeated all the steps, except gave the model an input shape of 3 instead of 4, and only stacked x1, x2, and x3. The model worked and generated y_pred values that made sense. 
+
+#### Following the previous model you specified (6 houses in Mathews), import your new data set and train a new model on your target and features. 
 #### Write a one and a half to two page report on your results and include the following.
 #### A description of the housing data you scraped from zillow
 #### A description of your model architecture
