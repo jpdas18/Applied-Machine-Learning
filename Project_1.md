@@ -44,8 +44,8 @@
 
 ![plot](project1_fig10.png)
 
-| | Difference | Predicted Price | Actual Price |
-| ---- | ---- | ---- | ---- | ---- |
+| Difference | Predicted Price | Actual Price |
+| ---- | ---- | ---- | ---- |
 | Mean | 315429.62 | 783206.95 | 467777.33 |
 | 1Q | 265089.57 | 716188.34 | 259900 | 
 | Median | 423182.33 | 742497.01 | 350000 |  
