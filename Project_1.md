@@ -31,7 +31,7 @@
 
 ![plot](project1_fig9.png)
 
-#### I used the model to make predictions for each house price in the dataset. I added a column for predictions to the dataframe, as well as a column for the difference between predicted price and actual price. Below is a plot of the actual prices versus the predicted precies. It seems that the model was not very accurate at predicting, especially for the more expensive homes and the least expensive. The model seemed best able to predict homes that lay in the range of the mean and median (around 350-500k). Nearly all of the predicted house prices fall within the range of 250k and 500k, which is a much narrower range than the range of actual house prices (37k - 13 million). Clearly, the model is inaccurate for predicting homes that cost less than 250k and more than 500k because there are few if any predictions under or above despite being houses that cost less than 250k and more than 500k.; these numbers correspond, respectively, to about the 1st and 3rd quartiles of the house prices. 
+#### I used the model to make predictions for each house price in the dataset. I added a column for predictions to the dataframe, as well as a column for the difference between predicted price and actual price. Below is a plot of the actual prices versus the predicted precies. It seems that the model was not very accurate at predicting, especially for the more expensive homes and the least expensive. The model seemed best able to predict homes that lay in the range of the mean and median (around 350-500k). Nearly all of the predicted house prices fall within the range of 300k and 600k, which is a much narrower range than the range of actual house prices (37k - 13 million). Clearly, the model is inaccurate for predicting homes that cost less than 250k and more than 500k because there are few if any predictions under or above despite being houses that cost less than 250k and more than 500k.; these numbers correspond, respectively, to about the 1st and 3rd quartiles of the house prices. 
 
 ![plot](project1_fig7.png)
 
@@ -39,14 +39,22 @@
 
 ![plot](project1_fig6.png)
 
-| | Mean Squared Error | 
-| ---- | ---- |
-| All Predictions | 281726.7 |
-| 10 Largest Over-Predictions | 198050.7 |
-| 10 Largets Under-Predictions | 9073386.6 |
-| 10 Most Accurate Predictions | 42.1 |
+#### The table below includes statistics for the difference between predicted and actual price, predicted price, and actual price for comparison. It is interesting to note the narrow range of predicted prices. All predicted prices are between 300k and 570k. The range of actual prices is much larger. The mean of predicted house prices is similar to but slightly less than the mean of actual house prices, and the median of predicted house prices about 100k greater the median of actual house prices. The numbers from this table further prove the point that this model works best on data that falls in the interquartile range of the actual house prices. The model is not accurate for outliers. 
+
+| | Difference | Predicted Price | Actual Price | 
+| ---- | ---- | ---- | ---- |
+| Min | -12514578.84 | 306950.52 | 37000 |
+| Max | 515548.8 | 562248.80 | 12999000 |
+| Mean | -28258.32 | 439519.01 | 467777.33 |
+| 1Q | -42606 | 421895.6 | 259900.0 |
+| Median | 78020 | 440404.51 | 350000 |
+| 3Q | 191739.82 | 465606.93 | 487550 |
+
 
 #### **Task #4: Rank all homes from best to worst deal**
-#### Because this model is skewed to better predict houses in the median range, by its parameters, the cheapest houses are the best deals because they are consistently over-predicted by the model and the most expensive houses are the worst deals because they are under-predicted by the model. Below is a plot of difference between actual and predicted price and the actual price. The greater the difference, the better the deal; that is the houses are ranked from left to right as worst to best.
+#### Because this model is skewed to better predict houses in the middle range for house prices, by its parameters, the cheapest houses are the best deals because they are consistently over-predicted by the model and the most expensive houses are the worst deals because they are under-predicted by the model. Below is a plot of difference between actual and predicted price and the actual price. The greater the difference, the better the deal; that is the houses are ranked from left to right as worst to best.
 
 ![plot](project1_fig10.png)
+
+#### The worst deal is the most expensive house in the dataset, costing nearly $13 million. The model predicted its price to be $484k, putting the difference at around $12.5 million. This house has 3 bedrooms, which is half the number of bedrooms as the house(s) with the most bedrooms (6). The square footage of this house is nearly 3000; however, this is much less than the max square footage of the dataset (5330). This house is clearly a bad deal. 
+#### The best deal is 
