@@ -43,3 +43,12 @@
 #### Because this model is skewed to better predict houses in the median range, by its parameters, the cheapest houses are the best deals because they are consistently over-predicted by the model and the most expensive houses are the worst deals because they are under-predicted by the model. Below is a plot of difference between actual and predicted price and the actual price. The greater the difference, the better the deal; that is the houses are ranked from left to right as worst to best.
 
 ![plot](project1_fig10.png)
+
+| | Difference | Predicted Price | Actual Price |
+| ---- | ---- | ---- | ---- | ---- |
+| Mean | 315429.62 | 783206.95 | 467777.33 |
+| 1Q | 265089.57 | 716188.34 | 259900 | 
+| Median | 423182.33 | 742497.01 | 350000 |  
+| 3Q | 542752.43 | 815254.974 | 487550 | 
+| Max | 1099743.12 | 1161643.12 | 12999000 | 
+| Min | -12087062.76 | 514471.34 | 37000 |
