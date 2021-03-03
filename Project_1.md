@@ -25,7 +25,7 @@
 #### I decided to go back and remove my variable for zip code to see if my model would work without it. I repeated all the steps, except gave the model an input shape of 3 instead of 4, and only stacked x1, x2, and x3 (excluding zip code). The model worked and generated y_pred values that made sense. I decided to continue working on my project without the zip code variable; I will incorporate it later if/when I have the time.  
 #### After seeing that the model ran on the data without the zip code variable, I decided to run the model again but with 100 epochs. However, my model did not improve much with increasing epochs, as shown below.
 
-![plot](project1_fig1.png)
+![plot](project1_fig8.png)
 
 #### I decided to try out a different optimizer to see if it would be better at reducing loss. I compiled the model with an adam optimizer and although it does look like the loss decreases, it does not appear that the adam optimizer is significantly better than sgd for this data. I will continue on using my original model (with the sgd optimizer) to conform with the expectations for the lab.
 
