@@ -35,6 +35,10 @@
 
 ![plot](project1_fig2.png)
 
+It looks like the model was a poor predictor of the cost of more expensive homes. It also did not accurately predict the cost of the least expensive homes as well as it predicted homes in the middle of the price range.
+
+![plot](project1_fig6.png)
+
 #### An analysis of your model output
 #### An analysis of the output that assesses and ranks all homes from best to worst deal
 #### Include at least three plots that support your project report
