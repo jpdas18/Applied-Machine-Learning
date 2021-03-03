@@ -29,7 +29,7 @@
 
 ![plot](project1_fig3.png)
 
-#### I used the model to make predictions for each house price in the dataset. I added a column for predictions to the dataframe, as well as a column for the difference between predicted price and actual price. Below is a plot of the actual prices versus the predicted precies. It seems that the model was not very accurate at predicting, especially for more expensive homes.
+#### I used the model to make predictions for each house price in the dataset. I added a column for predictions to the dataframe, as well as a column for the difference between predicted price and actual price. Below is a plot of the actual prices versus the predicted precies. It seems that the model was not very accurate at predicting, especially for more expensive homes. The model seemed best fit to predict homes that lay in the range of the mean and median (around 300-500k).
 
 ![plot](project1_fig2.png)
 
