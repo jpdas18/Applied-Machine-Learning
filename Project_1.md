@@ -25,14 +25,13 @@
 
 ![plot](project1_fig1.png)
 
-#### I used the model to make predictions for each house price in the dataset. I added a column for predictions to the dataframe, as well as a column for the difference between predicted price and actual price. 
-
-#### I decided to try out a different optimizer. I compiled the model with an optimizer equal to adam and 
+#### I decided to try out a different optimizer. I compiled the model with an optimizer equal to adam and although it does look like the loss decreases, it does not appear that the adam optimizer is significantly better than sgd for this data. I will continue on using my original model (with the sgd optimizer) to conform with the expectations for the lab.
 
 ![plot](project1_fig3.png)
 
-#### A description of the housing data you scraped from zillow
-#### A description of your model architecture
+#### I used the model to make predictions for each house price in the dataset. I added a column for predictions to the dataframe, as well as a column for the difference between predicted price and actual price. 
+
+
 #### An analysis of your model output
 #### An analysis of the output that assesses and ranks all homes from best to worst deal
 #### Include at least three plots that support your project report
