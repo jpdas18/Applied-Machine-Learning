@@ -27,7 +27,7 @@
 
 ![plot](project1_fig8.png)
 
-#### I decided to try out a different optimizer to see if it would be better at reducing loss. I compiled the model with an adam optimizer and although it does look like the loss decreases, it does not appear that the adam optimizer is significantly better than sgd for this data. I will continue on using my original model (with the sgd optimizer) to conform with the expectations for the lab.
+#### I decided to try out a different optimizer to see if it would be better at reducing loss. I compiled the model with an adam optimizer. Because it does not appear that the adam optimizer is significantly better than sgd for this data, I will continue on using my original model (with the sgd optimizer) to conform with the expectations for the lab.
 
 ![plot](project1_fig3.png)
 
