@@ -39,6 +39,13 @@
 
 ![plot](project1_fig6.png)
 
+| | Mean Squared Error | 
+| ---- | ---- |
+| All Predictions | 281726.7 |
+| 10 Largest Over-Predictions | 198050.7 |
+| 10 Largets Under-Predictions | 9073386.6 |
+| 10 Most Accurate Predictions | 42.1 |
+
 #### **Task #4: Rank all homes from best to worst deal**
 #### Because this model is skewed to better predict houses in the median range, by its parameters, the cheapest houses are the best deals because they are consistently over-predicted by the model and the most expensive houses are the worst deals because they are under-predicted by the model. Below is a plot of difference between actual and predicted price and the actual price. The greater the difference, the better the deal; that is the houses are ranked from left to right as worst to best.
 
