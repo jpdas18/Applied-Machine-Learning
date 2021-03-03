@@ -2,8 +2,9 @@
 #### Task #1: Pick a city, scrape as many observations from Zillow
 #### I chose to examine **Madison**, the capital of Wisconsin. I first scraped exactly 400 observations, generating a comma separated values (.csv) file which I named homes.csv. To understand the data a little bit better, I looked at some basic stats.
 
-| Beds | Bathrooms | Square Footage | Price |
-| ---- | 
+| Stat | Beds | Bathrooms | Square Footage | Price |
+| ---- | ---- | ---- | ---- | ---- |
+| Mean | 2.99 | 0 | 0 | 0 |
 
 #### Task #2: Clean the housing data you obtained and create a number of usable features (independent variables) and targets (dependent variables). Set price as the response variable, and then set numbers of beds, number of bathrooms and total square footage as the predictors.
 #### After importing the data into my project using the Python 3.8 interpreter, I opened to read through to look for potential issues. I saw a few en dashes spaced throughout and decided that I would replace these en dashes with a value of zero for my model. Although this is not the most accurate approach, I figured that because there were not many missing values, it would not make a big difference in the overall performance of the model. 
