@@ -35,7 +35,7 @@
 
 ![plot](project1_fig2.png)
 
-It looks like the model was a poor predictor of the cost of more expensive homes. It also did not accurately predict the cost of the least expensive homes as well as it predicted homes in the middle of the price range.
+#### Below is a plot of the absolute value of the difference between predicted and actual house price and actual house price. The points appear similar to an upward facing parabola; points in the middle are closest to an absolute difference of zero, indicating that the model best predicted the cost of homes in the middle of the price range. It looks like the model was poorest at predicting of the cost of more expensive homes; as house price increases, the difference between actual and predicted price increases as well. The model did not accurately predict the cost of the least expensive homes as well as it predicted homes in the middle of the price range.
 
 ![plot](project1_fig6.png)
 
