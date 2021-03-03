@@ -2,7 +2,7 @@
 #### Task #1: Pick a city, scrape as many observations from Zillow
 #### I chose to examine **Madison**, the capital of Wisconsin. I first scraped exactly 400 observations, generating a comma separated values (.csv) file which I named homes.csv. To understand the data a little bit better, I looked at some basic stats.
 
-| Stat | Beds | Bathrooms | Square Footage | Price |
+| | Beds | Bathrooms | Square Footage | Price |
 | ---- | ---- | ---- | ---- | ---- |
 | Mean | 2.99 | 0 | 0 | 0 |
 
