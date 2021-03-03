@@ -23,7 +23,7 @@
 #### I decided to go back and remove my variable for zip code to see if my model would work without it. I repeated all the steps, except gave the model an input shape of 3 instead of 4, and only stacked x1, x2, and x3 (excluding zip code). The model worked and generated y_pred values that made sense. I decided to continue working on my project without the zip code variable; I will incorporate it later if/when I have the time.  
 #### After seeing that the model ran on the data without the zip code variable, I decided to run the model again but with 100 epochs. 
 
-!plot[project1_fig1.png]
+![plot](project1_fig1.png)
 
 #### I used the model to make predictions for each house price in the dataset. I added a column for predictions to the dataframe, as well as a column for the difference between predicted price and actual price. 
 
