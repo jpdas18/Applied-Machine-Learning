@@ -10,7 +10,9 @@
 #### The eleventh model had the highest area under the ROC curve, so I will select its penalty. This penalty equals .00108. The plot below shows how well this model predicts each of the five wealth outcomes. 
 ![plot](slice11.png)
 #### The model clearly predicts the wealthiest population the best. It also predicts the least wealthy group decently well. It is not as accurate for the middle three groups. With more time, I would like to combine the middle three groups into one large group to see how it would affect the model. 
-#### For comparison, I have chosen to slice the second best model by area under the ROC curve.
+#### For comparison, I have chosen to slice the second best model by area under the ROC curve. This is the twelfth model. The penalty here is .00137.
+![plot](slice12.png)
+#### This model is also best at predicting the wealthiest group and second best at predicting the least wealthy group. It does not appear to be significantly different from the best model, which makes sense because the AUC-ROC values are very close.
 #### Using the R script provided, set up your random forest model and produce the AUC - ROC values for the randomly selected predictors, and the minimal node size, again with wealth as the target. 
 #### How did your random forest model fare when compared to the penalized logistic regression? Provide your ROC plots and interpret them. Are you able to provide a plot that supports the relative importance of each feature's contribution towards the predictive power of your random forest ensemble model?
 
