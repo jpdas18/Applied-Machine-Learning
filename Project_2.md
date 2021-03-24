@@ -18,13 +18,20 @@
 
 #### Using the python script provided, train a logistic regression model using the tensorflow estimator API and your DHS data, again with wealth as the target. 
 #### Apply the linear classifier to the feature columns and determine the accuracy, AUC and other evaluative metrics towards each of the different wealth outcomes. 
+#### I have included following plots to get a better sense of the wealth distribution in Ethiopia. The first plot (below) shows how many people are in each of the five wealth categories.
 ![plot](wealthgroupsethiopia.png)
+#### For the next five plots, I plotted only one wealth category population against all the others. The first plot is the least wealthy group (1) versus all the others.
 ![plot](1vall.png)
+#### The second plot is the second least wealth group (2) versus all others.
 ![plot](2vall.png)
+#### The third plot is the middle group (3) versus all others.
 ![plot](3vall.png)
+#### The fourth plot is the second most wealthy group (4) versus all others.
 ![plot](4vall.png)
+#### The fifth plot is the middle group (3) versus all others.
 ![plot](5vall.png)
-
+#### The largest wealth categories are the least wealthy (1) and most wealthy (5). Perhaps this is why previous models have been best at predicting for these two groups.
+ 
 #### Then continue with your linear classifier adding the derived feature columns you have selected in order to extend capturing combinations of correlations (instead of learning on single model weights for each outcome). 
 #### Again produce your ROC curves and interpret the results.
 
