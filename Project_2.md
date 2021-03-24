@@ -28,7 +28,7 @@
 ![plot](3vall.png)
 #### The fourth plot is the second most wealthy group (4) versus all others.
 ![plot](4vall.png)
-#### The fifth plot is the middle group (3) versus all others.
+#### The fifth plot is the middle group (5) versus all others.
 ![plot](5vall.png)
 #### The largest wealth categories are the least wealthy (1) and most wealthy (5). Perhaps this is why previous models have been best at predicting for these two groups.
  
