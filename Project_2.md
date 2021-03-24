@@ -7,12 +7,12 @@
 #### Based on this data alone, it is difficult to select the best performing model. I will plot the models'AUC-ROC curves to see which is the biggest, and then select that penalty to tune my hyperparameter and remove any potentially irrelevant predictors.
 #### Provide justification for your selected penalty value? Finally, provide your ROC plots and interpret them. How effective is your penalized logistic regression model at predicting each of the five wealth outcomes.
 ![plot](lr_plot.png)
-#### The eleventh model had the highest area under the ROC curve, so I will select its penalty. This penalty equals .00108. The plot below shows how well this model predicts each of the five wealth outcomes. 
+#### The eleventh slice had the highest area under the ROC curve, and it is more penalized compared with the previous ten slices, so I will select its penalty. This penalty equals .00108. The plot below shows how well this slice predicts each of the five wealth outcomes. 
 ![plot](slice11.png)
-#### The model clearly predicts the wealthiest population the best. It also predicts the least wealthy group decently well. It is not as accurate for the middle three groups. With more time, I would like to combine the middle three groups into one large group to see how it would affect the model. 
-#### For comparison, I have chosen to slice the second best model by area under the ROC curve. This is the twelfth model. The penalty here is .00137.
+#### The slice clearly predicts the wealthiest population the best. It also predicts the least wealthy group decently well. It is not as accurate for the middle three groups. With more time, I would like to combine the middle three groups into one large group to see how it would affect the model. 
+#### For comparison, I have chosen the second best slice by area under the ROC curve. This is the twelfth slice, with a penalty of .00137.
 ![plot](slice12.png)
-#### This model is also best at predicting the wealthiest group and second best at predicting the least wealthy group. It does not appear to be significantly different from the best model, which makes sense because the AUC-ROC values are very close.
+#### This slice is also best at predicting the wealthiest group and second best at predicting the least wealthy group. It does not appear to be significantly different from the best model, which makes sense because the AUC-ROC and penalty values are very close.
 #### Using the R script provided, set up your random forest model and produce the AUC - ROC values for the randomly selected predictors, and the minimal node size, again with wealth as the target. 
 #### How did your random forest model fare when compared to the penalized logistic regression? Provide your ROC plots and interpret them. Are you able to provide a plot that supports the relative importance of each feature's contribution towards the predictive power of your random forest ensemble model?
 
