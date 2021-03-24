@@ -18,7 +18,7 @@
 
 #### Using the python script provided, train a logistic regression model using the tensorflow estimator API and your DHS data, again with wealth as the target. 
 #### Apply the linear classifier to the feature columns and determine the accuracy, AUC and other evaluative metrics towards each of the different wealth outcomes. 
-![plot](wealthgroupsethiopia)
+![plot](wealthgroupsethiopia.png)
 ![plot](1vall.png)
 ![plot](2vall.png)
 ![plot](3vall.png)
