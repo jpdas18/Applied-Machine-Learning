@@ -1,11 +1,13 @@
 ### Project 2
 
-#### Introduction: For this project, I will use DHS data to create models for predicting wealth in Ethiopia based on age, gender, education level, household size. I will create a logistic regression model, a random forest model, a linear regression model, and a gradient boosting model using decision trees. I will choose the best model from each of this based on available parameters as well as the best model overall using ROC-AUC curves.
+#### Introduction: For this project, I will use DHS data to create models for predicting wealth in Ethiopia based on age, gender, education level, household size. I will create a logistic regression model, a random forest model, a linear regression model, and a gradient boosting model using decision trees. I will choose the best model from each of this based on available parameters as well as the best model overall using AUC-ROC curves.
 #### Task #1: Using the R script provided, split and sample your DHS persons data and evaluate the AUC - ROC values you produce. 
 #### Which "top_model" performed the best (had the largest AUC)? Are you able to use the feature selection penalty to tune your hyperparameter and remove any potentially irrelevant predictors? 
 ![plot](top15best.png)
-![plot](lr_plot.png)
+#### Based on this data alone, it is difficult to select the best performing model. I will plot the models'AUC-ROC curves to see which is the biggest, and then select that penalty to tune my hyperparameter and remove any potentially irrelevant predictors.
 #### Provide justification for your selected penalty value? Finally, provide your ROC plots and interpret them. How effective is your penalized logistic regression model at predicting each of the five wealth outcomes.
+![plot](lr_plot.png)
+#### The eleventh model had the highest area under the ROC curve, so I will select its penalty. This penalty equals .00108. 
 
 #### Using the R script provided, set up your random forest model and produce the AUC - ROC values for the randomly selected predictors, and the minimal node size, again with wealth as the target. 
 #### How did your random forest model fare when compared to the penalized logistic regression? Provide your ROC plots and interpret them. Are you able to provide a plot that supports the relative importance of each feature's contribution towards the predictive power of your random forest ensemble model?
