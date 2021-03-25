@@ -38,7 +38,9 @@
 ![plot](lrmetrics.png)
 ![plot](linest1pp.png)
 ![plot](linest1roc.png) 
-#### I then decided to train another model to predict a wealth category of 1, adding a derived feature column crossing size and education. However, there was no significant difference between this and the previous model, so I decided to add a derived feature column crossing gender and education. There was no significant difference between this model and the two previous. 
+#### I trained models to predict each wealth category. The ROC curves of the model for each wealth category are all below.
+
+#### I decided to train another model to predict a wealth category of 1, adding a derived feature column crossing size and education. However, there was no significant difference between this and the previous model, so I decided to add a derived feature column crossing gender and education. There was no significant difference between this model and the two previous. 
 
 #### Again produce your ROC curves and interpret the results.
 
