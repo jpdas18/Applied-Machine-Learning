@@ -37,8 +37,7 @@
 ![plot](lrmetrics.png)
 ![plot](linest1pp.png)
 ![plot](linest1roc.png) 
-#### I then decided to train another model to predict a wealth category of 1, adding a derived feature column crossing size and education
-
+#### I then decided to train another model to predict a wealth category of 1, adding a derived feature column crossing size and education. However, there was no significant difference between this and the previous model, so I decided to add a derived feature column crossing gender and education.
 
 #### Again produce your ROC curves and interpret the results.
 
