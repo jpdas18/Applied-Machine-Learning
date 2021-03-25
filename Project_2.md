@@ -33,10 +33,9 @@
 #### Using the python script provided, train a logistic regression model using the tensorflow estimator API and your DHS data, again with wealth as the target. 
 #### Apply the linear classifier to the feature columns and determine the accuracy, AUC and other evaluative metrics towards each of the different wealth outcomes. 
 #### Then continue with your linear classifier adding the derived feature columns you have selected in order to extend capturing combinations of correlations (instead of learning on single model weights for each outcome). 
-#### I first trained a logistic regression model to predict the least wealthy category (1) versus all the other wealth categories. The following plots pertain to the wealth category 1.
-#### Below is my first plot of predicted probabilities against frequency using size, education, age, and gender as predictors of wealth.
+#### I first trained a logistic regression model to predict the least wealthy category (1) versus all the other wealth categories. The following plots shows the evaluation metrics and ROC curve for this model. 
 ![plot](lrmetrics.png)
-
+#### I then decided to train another model, adding a derived feature column crossing size and education
 
 
 #### Again produce your ROC curves and interpret the results.
