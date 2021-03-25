@@ -13,7 +13,7 @@
 ![plot](4vall.png)
 #### The fifth plot is the most wealthy group (5) versus all others.
 ![plot](5vall.png)
-#### The largest wealth categories, based on population, are the least wealthy (1) and most wealthy (5). Perhaps this is why previous models have been best at predicting for these two groups.
+#### The largest wealth categories, based on population, are the least wealthy (1) and most wealthy (5). 
  
 #### Task #1: Using the R script provided, split and sample your DHS persons data and evaluate the AUC - ROC values you produce. 
 #### Which "top_model" performed the best (had the largest AUC)? Are you able to use the feature selection penalty to tune your hyperparameter and remove any potentially irrelevant predictors? 
