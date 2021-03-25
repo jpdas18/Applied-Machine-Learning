@@ -1,6 +1,20 @@
 ### Project 2
 
-#### Introduction: For this project, I will use DHS data to create models for predicting wealth in Ethiopia based on age, gender, education level, household size. This DHS data is Ethiopia's household recode from the year 2016, and it is a Standard DHS-VII survey. I will create a logistic regression model, a random forest model, a linear regression model, and a gradient boosting model using decision trees. I will choose the best model from each of this based on available parameters as well as the best model overall using AUC-ROC curves.
+#### Introduction: For this project, I will use DHS data to create models for predicting wealth in Ethiopia based on age, gender, education level, household size. This DHS data is Ethiopia's household recode from the year 2016, and it is a Standard DHS-VII survey. I will create a penalized logistic regression model, a random forest model, a linear estimation model using the tensorflow estimator API, and a gradient boosting model using decision trees. I will choose the best model from each of this based on available parameters as well as the best model overall using AUC-ROC curves.
+#### I have included following plots to get a better sense of the wealth distribution in Ethiopia. The first plot (below) shows how many people are in each of the five wealth categories.
+![plot](wealthgroupsethiopia.png)
+#### For the next five plots, I plotted only one wealth category population against all the others. The first plot is the least wealthy group (1) versus all the others.
+![plot](1vall.png)
+#### The second plot is the second least wealth group (2) versus all others.
+![plot](2vall.png)
+#### The third plot is the middle group (3) versus all others.
+![plot](3vall.png)
+#### The fourth plot is the second most wealthy group (4) versus all others.
+![plot](4vall.png)
+#### The fifth plot is the middle group (5) versus all others.
+![plot](5vall.png)
+#### The largest wealth categories are the least wealthy (1) and most wealthy (5). Perhaps this is why previous models have been best at predicting for these two groups.
+ 
 #### Task #1: Using the R script provided, split and sample your DHS persons data and evaluate the AUC - ROC values you produce. 
 #### Which "top_model" performed the best (had the largest AUC)? Are you able to use the feature selection penalty to tune your hyperparameter and remove any potentially irrelevant predictors? 
 ![plot](top15best.png)
@@ -18,20 +32,7 @@
 
 #### Using the python script provided, train a logistic regression model using the tensorflow estimator API and your DHS data, again with wealth as the target. 
 #### Apply the linear classifier to the feature columns and determine the accuracy, AUC and other evaluative metrics towards each of the different wealth outcomes. 
-#### I have included following plots to get a better sense of the wealth distribution in Ethiopia. The first plot (below) shows how many people are in each of the five wealth categories.
-![plot](wealthgroupsethiopia.png)
-#### For the next five plots, I plotted only one wealth category population against all the others. The first plot is the least wealthy group (1) versus all the others.
-![plot](1vall.png)
-#### The second plot is the second least wealth group (2) versus all others.
-![plot](2vall.png)
-#### The third plot is the middle group (3) versus all others.
-![plot](3vall.png)
-#### The fourth plot is the second most wealthy group (4) versus all others.
-![plot](4vall.png)
-#### The fifth plot is the middle group (5) versus all others.
-![plot](5vall.png)
-#### The largest wealth categories are the least wealthy (1) and most wealthy (5). Perhaps this is why previous models have been best at predicting for these two groups.
- 
+
 #### Then continue with your linear classifier adding the derived feature columns you have selected in order to extend capturing combinations of correlations (instead of learning on single model weights for each outcome). 
 #### Again produce your ROC curves and interpret the results.
 
