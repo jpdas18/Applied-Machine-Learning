@@ -77,6 +77,6 @@
 ![plot](boo5roc.png)
 ![plot](boo5pp.png)
 #### I decided to also plot the evaluation metrics for category 5 because this model best predicted this category.
-![plot](boo5.png)
+![plot](5boo.png)
 
 #### Analyze all four models. According to the evaluation metrics, which model produced the best results? Were there any discrepancies among the five wealth outcomes from your DHS survey dataset?
