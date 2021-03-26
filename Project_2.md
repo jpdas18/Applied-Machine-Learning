@@ -58,8 +58,8 @@
 #### I decided to train another model to predict a wealth category of 1, adding a derived feature column crossing size and education. However, there was no significant difference between this and the previous model, so I decided to add a derived feature column crossing gender and education. There was no significant difference between this model and the two previous. 
 
 
-#### Using the python script provided, train a gradient boosting model using decision trees with the tensorflow estimator. 
-#### Provide evaluative metrics including a measure of accuracy and AUC. Produce the predicted probabilities plot as well as the ROC curve for each wealth outcome and interpret these results.
+### Task 4: Using the python script provided, train a gradient boosting model using decision trees with the tensorflow estimator. 
+### Provide evaluative metrics including a measure of accuracy and AUC. Produce the predicted probabilities plot as well as the ROC curve for each wealth outcome and interpret these results.
 ![plot](boometrics1.png)
 ![plot](boo1roc.png) 
 ![plot](boo1pp.png)
@@ -79,4 +79,4 @@
 #### I decided to also plot the evaluation metrics for category 5 because this model best predicted this category.
 ![plot](5boo.png)
 
-#### Analyze all four models. According to the evaluation metrics, which model produced the best results? Were there any discrepancies among the five wealth outcomes from your DHS survey dataset?
+### Analyze all four models. According to the evaluation metrics, which model produced the best results? Were there any discrepancies among the five wealth outcomes from your DHS survey dataset?
