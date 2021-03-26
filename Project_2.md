@@ -52,6 +52,8 @@
 #### The fifth (below) is category 5.
 ![plot](linest5roc.png)
 ![plot](linest5pp.png)
+#### I decided to also plot the evaluation metrics for category 5 because this model best predicted this category.
+![plot](5.png)
 #### The model performs best for the 1st and 5th wealth categories (the least and most wealthy).
 #### I decided to train another model to predict a wealth category of 1, adding a derived feature column crossing size and education. However, there was no significant difference between this and the previous model, so I decided to add a derived feature column crossing gender and education. There was no significant difference between this model and the two previous. 
 
@@ -74,6 +76,7 @@
 #### The fifth (below) is category 5.
 ![plot](boo5roc.png)
 ![plot](boo5pp.png)
-
+#### I decided to also plot the evaluation metrics for category 5 because this model best predicted this category.
+![plot](boo5.png)
 
 #### Analyze all four models. According to the evaluation metrics, which model produced the best results? Were there any discrepancies among the five wealth outcomes from your DHS survey dataset?
