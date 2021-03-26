@@ -36,23 +36,43 @@
 
 #### I first trained a logistic regression model to predict the least wealthy category (1) versus all the other wealth categories. The following plots shows the evaluation metrics, probability frequency plot, and ROC curve for this model. The model accuracy is almost 70%, and the ROC curve shows that the model does a good job of predicting a wealth category equal to one versus the other categories. 
 ![plot](linestmetrics1.png)
-![plot](linest1pp.png)
 ![plot](linest1roc.png) 
-#### I trained models to predict each wealth category. The ROC curves of the model for each wealth category are all below, in order of wealth category. The first (below) is category 1.
-![plot](linest1roc.png)
+![plot](linest1pp.png)
+#### I trained models to predict each wealth category. The ROC curves and predicted probablity plots of the model for each wealth category are all below, in order of wealth category. The first model is for category 1, the least wealthy category; these plots are above. The rest are below.
 #### The second (below) is category 2.
 ![plot](linest2roc.png)
+![plot](linest2pp.png)
 #### The third (below) is category 3.
 ![plot](linest3roc.png)
+![plot](linest3pp.png)
 #### The fourth (below) is category 4.
 ![plot](linest4roc.png)
+![plot](linest4pp.png)
 #### The fifth (below) is category 5.
 ![plot](linest5roc.png)
+![plot](linest5pp.png)
 #### The model performs best for the 1st and 5th wealth categories (the least and most wealthy).
 #### I decided to train another model to predict a wealth category of 1, adding a derived feature column crossing size and education. However, there was no significant difference between this and the previous model, so I decided to add a derived feature column crossing gender and education. There was no significant difference between this model and the two previous. 
 
 
 #### Using the python script provided, train a gradient boosting model using decision trees with the tensorflow estimator. 
 #### Provide evaluative metrics including a measure of accuracy and AUC. Produce the predicted probabilities plot as well as the ROC curve for each wealth outcome and interpret these results.
+![plot](boometrics1.png)
+![plot](boo1roc.png) 
+![plot](boo1pp.png)
+#### I trained models to predict each wealth category. The ROC curves and predicted probablity plots of the model for each wealth category are all below, in order of wealth category. The first model is for category 1, the least wealthy category; these plots are above. The rest are below.
+#### The second (below) is category 2.
+![plot](boo2roc.png)
+![plot](boo2pp.png)
+#### The third (below) is category 3.
+![plot](boo3roc.png)
+![plot](boo3pp.png)
+#### The fourth (below) is category 4.
+![plot](boo4roc.png)
+![plot](boo4pp.png)
+#### The fifth (below) is category 5.
+![plot](boo5roc.png)
+![plot](boo5pp.png)
+
 
 #### Analyze all four models. According to the evaluation metrics, which model produced the best results? Were there any discrepancies among the five wealth outcomes from your DHS survey dataset?
