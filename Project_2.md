@@ -52,7 +52,7 @@
 #### The fifth (below) is category 5.
 ![plot](linest5roc.png)
 ![plot](linest5pp.png)
-#### I decided to also include the evaluation metrics for category 5 because the ROC curve showed that the model was probably best at predicting this category. The AUC is fairly high, even compared with model 1.
+#### I decided to also include the evaluation metrics for category 5 because the ROC curve showed that the model was probably best at predicting this category. The AUC is fairly high, even compared with the model for category 1.
 ![plot](5.png)
 #### The model performs best for the 1st and 5th wealth categories (the least and most wealthy).
 #### I decided to train another model to predict a wealth category of 1, adding a derived feature column crossing size and education. However, there was no significant difference between this and the previous model, so I decided to add a derived feature column crossing gender and education. There was no significant difference between this model and the two previous. The ROC curve and area under the curve looked nearly exactly the same as for the first model I created for category 1, so I decided it was not worthwhile to include the graphics in this writeup.
