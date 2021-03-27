@@ -14,12 +14,6 @@
 #### The fifth plot is the most wealthy group (5) versus all others.
 ![plot](5vall.png)
 #### The largest wealth categories, based on population, are the least wealthy (1) and most wealthy (5). 
-
-#### Below are four heat maps which describe the data.
-![plot](raw2.png)
-![plot](normal2.png)
-![plot](scale2.png)
-![plot](percent2.png)
  
 ### Task #1: Using the R script provided, split and sample your DHS persons data and evaluate the AUC - ROC values you produce. 
 ### Which "top_model" performed the best (had the largest AUC)? Are you able to use the feature selection penalty to tune your hyperparameter and remove any potentially irrelevant predictors? 
@@ -89,3 +83,10 @@
 #### All four models performed best at classifying wealth categories of 1 and 5, the least and most wealthy. Perhaps this is partly because these categories have a larger population than the mid-range wealth categories 2, 3, and 4. 
 #### Based on area under the curve, the linear estimation and gradient boosting model performed the best. There appeared to be little differences between the two. They both performed well at predicting wealth category 1, and they were best at predicting wealth category 5. The AUC values for the linear estimation model were .661 for wealth category 1 and .731 for wealth category 5.  The AUC values for the gradient boosting model were .668 for category 1 and .738 for category 5. Thus, I conclude that the gradient boosting model was the best of the four, although not by much more than the linear estimation model.
 #### In comparsion, the penalized logistic regression model exhibited an AUC of nearly .61. This is not nearly as high as the other models; however, it seems that it performed similarly well at predicting the 1st and 5th wealth categories.
+
+
+#### Below are four heat maps which describe the data.
+![plot](raw2.png)
+![plot](normal2.png)
+![plot](scale2.png)
+![plot](percent2.png)
