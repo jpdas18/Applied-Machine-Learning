@@ -1,7 +1,7 @@
 ### Project 2
 
 #### Introduction: For this project, I will use DHS data to create models for predicting wealth in Ethiopia based on age, gender, education level, household size. This DHS data is Ethiopia's household recode from the year 2016, and it is a Standard DHS-VII survey. I will create a penalized logistic regression model, a random forest model, a linear estimation model using the tensorflow estimator API, and a gradient boosting model using decision trees. I will analyze each model and choose the best model overall using area under the ROC curves.
-#### There are approximately 75,000 people sampled in this dataset. I have included the following plots to get a better sense of the wealth distribution among the sample. The first plot (below) shows how many people are in each of the five wealth categories.
+#### There are approximately 75,000 people sampled in this dataset. I have included the following plots to get a better sense of the wealth distribution among the sample. The first plot (below) shows how many people are in each of the five wealth categories. I included heat maps to describe the data after my analysis due to their size.
 ![plot](wealthgroupsethiopia.png)
 #### For the next five plots, I plotted only one wealth category population against all the others. The first plot is the least wealthy group (1) versus all the others.
 ![plot](1vall.png)
