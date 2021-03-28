@@ -34,7 +34,7 @@
 ![plot](snsd.JPG)
 #### Below are the ROC curves for the random forest model. This model also best predicted wealth category 5, and it did a good job predicting wealth category 1 as well. It seemed that it predicted wealth categories 2, 3, and 4 better than the penalized logistic regression, but in general it would be good to improve its ability to predict these.
 ![plot](g2.JPG)
-#### Overall, the two models have performed very similarly. However, based on the ROC curves the random forests model is superior to the penalized logistic regression.
+#### Overall, the two models have performed very similarly. However, the random forests model is slightly superior to the penalized logistic regression.
 ![plot](rf_lr_auc.png)
 #### The following plot demonstrates the importance of each feature used to predict wealth. These are age, education, size and gender.
 ![plot](g4.JPG)
@@ -91,7 +91,7 @@
 ### Analyze all four models. According to the evaluation metrics, which model produced the best results? Were there any discrepancies among the five wealth outcomes from your DHS survey dataset?
 #### All four models performed best at classifying wealth categories of 1 and 5, the least and most wealthy. Perhaps this is partly because these categories have a larger population than the mid-range wealth categories 2, 3, and 4. 
 #### Based on area under the curve, the linear estimation and gradient boosting model performed the best. There appeared to be little differences between the two. They both performed well at predicting wealth category 1, and they were best at predicting wealth category 5. The AUC values for the linear estimation model were .661 for wealth category 1 and .731 for wealth category 5.  The AUC values for the gradient boosting model were .668 for category 1 and .738 for category 5. Thus, I conclude that the gradient boosting model was the best of the four, although not by much more than the linear estimation model.
-#### In comparsion, the penalized logistic regression model exhibited an AUC of nearly .61. This is not nearly as high as the other models; however, it seems that it performed similarly well at predicting the 1st and 5th wealth categories.
+#### In comparsion, the penalized logistic regression model exhibited an AUC of nearly .61, and the random forest model exhibited an AUC of about .62. These AUCs are not nearly as high as the other models; however, it seems that these two are similar to each other. They also performed better at predicting the 1st and 5th wealth categories.
 
 
 #### Below are four heat maps which describe the data.
