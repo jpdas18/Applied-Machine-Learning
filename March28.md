@@ -1,5 +1,5 @@
 #### Download the administrative subdivision.
-
+![plot](Ethiopia_plot.png)
 #### Download the population raster from Worldpop.
 
 #### Download the 12 rasters and stack them.
