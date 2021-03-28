@@ -14,8 +14,7 @@
 #### The fifth plot is the most wealthy group (5) versus all others.
 ![plot](5vall.png)
 #### The largest wealth categories, based on population, are the least wealthy (1) and most wealthy (5). 
-#### I will be using age, education, size and gender to predict wealth. The following plot demonstrates the importance of each of these features.
-![plot](gp4.JPG)
+
 ### Task #1: Using the R script provided, split and sample your DHS persons data and evaluate the AUC - ROC values you produce. 
 ### Which "top_model" performed the best (had the largest AUC)? Are you able to use the feature selection penalty to tune your hyperparameter and remove any potentially irrelevant predictors? 
 ![plot](top15best.png)
@@ -33,6 +32,12 @@
 ### How did your random forest model fare when compared to the penalized logistic regression? Provide your ROC plots and interpret them. Are you able to provide a plot that supports the relative importance of each feature's contribution towards the predictive power of your random forest ensemble model?
 #### Below are the metrics for my random forest model. The mean accuracy is slightly better than that of the previous model (penalized logistic regression). 
 ![plot](snsd.JPG)
+#### Below are the ROC curves for the random forest model. This model also best predicted wealth category 5, and it did a good job predicting wealth category 1 as well. It seemed that it predicted wealth categories 2, 3, and 4 better than the penalized logistic regression, but in general it would be good to improve its ability to predict these.
+![plot](g2.JPG)
+![plot](g3.JPG)
+#### The following plot demonstrates the importance of each feature used to predict wealth. These are age, education, size and gender.
+![plot](gp4.JPG)
+
 
 ### Task #3: Using the python script provided, train a model using the tensorflow estimator API and your DHS data, again with wealth as the target. 
 ### Apply the linear classifier to the feature columns and determine the accuracy, AUC and other evaluative metrics towards each of the different wealth outcomes. 
