@@ -15,8 +15,8 @@
 ![plot](5vall.png)
 #### The largest wealth categories, based on population, are the least wealthy (1) and most wealthy (5). 
 
-### Task #1: Using the R script provided, split and sample your DHS persons data and evaluate the AUC - ROC values you produce. 
-### Which "top_model" performed the best (had the largest AUC)? Are you able to use the feature selection penalty to tune your hyperparameter and remove any potentially irrelevant predictors? 
+#### Task #1: Using the R script provided, split and sample your DHS persons data and evaluate the AUC - ROC values you produce. 
+#### Which "top_model" performed the best (had the largest AUC)? Are you able to use the feature selection penalty to tune your hyperparameter and remove any potentially irrelevant predictors? 
 ![plot](top15best.png)
 #### Based on this data alone, it is difficult to select the best performing model because the mean accuracy of several top models is the same. I will plot the models' AUC-ROC curves to see which is the biggest, and then select that penalty to tune my hyperparameter and remove any potentially irrelevant predictors.
 #### Provide justification for your selected penalty value? Finally, provide your ROC plots and interpret them. How effective is your penalized logistic regression model at predicting each of the five wealth outcomes.
@@ -28,8 +28,8 @@
 ![plot](slice12.png)
 #### This slice is also best at predicting the wealthiest group and second best at predicting the least wealthy group. It does not appear to be significantly different from the best model, which makes sense because the AUC-ROC and penalty values are very close.
 
-### Task #2: Using the R script provided, set up your random forest model and produce the AUC - ROC values for the randomly selected predictors, and the minimal node size, again with wealth as the target. 
-### How did your random forest model fare when compared to the penalized logistic regression? Provide your ROC plots and interpret them. Are you able to provide a plot that supports the relative importance of each feature's contribution towards the predictive power of your random forest ensemble model?
+#### Task #2: Using the R script provided, set up your random forest model and produce the AUC - ROC values for the randomly selected predictors, and the minimal node size, again with wealth as the target. 
+#### How did your random forest model fare when compared to the penalized logistic regression? Provide your ROC plots and interpret them. Are you able to provide a plot that supports the relative importance of each feature's contribution towards the predictive power of your random forest ensemble model?
 #### Below are the metrics for my random forest model. The mean accuracy is slightly better than that of the previous model (penalized logistic regression). 
 ![plot](snsd.JPG)
 #### Below are the ROC curves for the random forest model. This model also best predicted wealth category 5, and it did a good job predicting wealth category 1 as well. It seemed that it predicted wealth categories 2, 3, and 4 better than the penalized logistic regression, but in general it would be good to improve its ability to predict these.
@@ -40,8 +40,8 @@
 ![plot](g4.JPG)
 
 
-### Task #3: Using the python script provided, train a model using the tensorflow estimator API and your DHS data, again with wealth as the target. 
-### Apply the linear classifier to the feature columns and determine the accuracy, AUC and other evaluative metrics towards each of the different wealth outcomes. 
+#### Task #3: Using the python script provided, train a model using the tensorflow estimator API and your DHS data, again with wealth as the target. 
+#### Apply the linear classifier to the feature columns and determine the accuracy, AUC and other evaluative metrics towards each of the different wealth outcomes. 
 #### Then continue with your linear classifier adding the derived feature columns you have selected in order to extend capturing combinations of correlations (instead of learning on single model weights for each outcome). 
 
 #### I first trained the linear estimation model to predict the least wealthy category (1) versus all the other wealth categories. The following plots shows the evaluation metrics, probability frequency plot, and ROC curve for this model. The model accuracy is almost 70%, and the ROC curve shows that the model does a good job of predicting a wealth category equal to one versus the other categories. 
@@ -67,8 +67,8 @@
 #### I decided to train another model to predict a wealth category of 1, adding a derived feature column crossing size and education. However, there was no significant difference between this and the previous model, so I decided to add a derived feature column crossing gender and education. There was no significant difference between this model and the two previous. The ROC curve and area under the curve looked nearly exactly the same as for the first model I created for category 1, so I decided it was not worthwhile to include the graphics in this writeup.
 
 
-### Task 4: Using the python script provided, train a gradient boosting model using decision trees with the tensorflow estimator. 
-### Provide evaluative metrics including a measure of accuracy and AUC. Produce the predicted probabilities plot as well as the ROC curve for each wealth outcome and interpret these results.
+#### Task 4: Using the python script provided, train a gradient boosting model using decision trees with the tensorflow estimator. 
+#### Provide evaluative metrics including a measure of accuracy and AUC. Produce the predicted probabilities plot as well as the ROC curve for each wealth outcome and interpret these results.
 ![plot](boometrics1.png)
 ![plot](boo1roc.png) 
 ![plot](boo1pp.png)
