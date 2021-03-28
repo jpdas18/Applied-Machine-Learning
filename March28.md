@@ -1,4 +1,4 @@
-#### Download the administrative subdivision.
+#### Download the administrative subdivision. Below is a plot of my country, Ethiopia, using the admin data.
 ![plot](Ethiopia_plot.png)
 #### Download the population raster from Worldpop.
 
