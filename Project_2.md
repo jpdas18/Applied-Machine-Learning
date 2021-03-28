@@ -34,7 +34,7 @@
 ![plot](snsd.JPG)
 #### Below are the ROC curves for the random forest model. This model also best predicted wealth category 5, and it did a good job predicting wealth category 1 as well. It seemed that it predicted wealth categories 2, 3, and 4 better than the penalized logistic regression, but in general it would be good to improve its ability to predict these.
 ![plot](g2.JPG)
-![plot](g3.JPG)
+
 #### The following plot demonstrates the importance of each feature used to predict wealth. These are age, education, size and gender.
 ![plot](gp4.JPG)
 
