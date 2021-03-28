@@ -36,7 +36,7 @@
 ![plot](g2.JPG)
 
 #### The following plot demonstrates the importance of each feature used to predict wealth. These are age, education, size and gender.
-![plot](gp4.JPG)
+![plot](g4.JPG)
 
 
 ### Task #3: Using the python script provided, train a model using the tensorflow estimator API and your DHS data, again with wealth as the target. 
