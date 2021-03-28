@@ -14,7 +14,8 @@
 #### The fifth plot is the most wealthy group (5) versus all others.
 ![plot](5vall.png)
 #### The largest wealth categories, based on population, are the least wealthy (1) and most wealthy (5). 
- 
+#### I will be using age, education, size and gender to predict wealth. The following plot demonstrates the importance of each of these features.
+![plot](gp4.JPG)
 ### Task #1: Using the R script provided, split and sample your DHS persons data and evaluate the AUC - ROC values you produce. 
 ### Which "top_model" performed the best (had the largest AUC)? Are you able to use the feature selection penalty to tune your hyperparameter and remove any potentially irrelevant predictors? 
 ![plot](top15best.png)
@@ -30,6 +31,8 @@
 
 ### Task #2: Using the R script provided, set up your random forest model and produce the AUC - ROC values for the randomly selected predictors, and the minimal node size, again with wealth as the target. 
 ### How did your random forest model fare when compared to the penalized logistic regression? Provide your ROC plots and interpret them. Are you able to provide a plot that supports the relative importance of each feature's contribution towards the predictive power of your random forest ensemble model?
+#### Below are the metrics for my random forest model. The mean accuracy is slightly better than that of the previous model (penalized logistic regression). 
+![plot](snsd.JPG)
 
 ### Task #3: Using the python script provided, train a model using the tensorflow estimator API and your DHS data, again with wealth as the target. 
 ### Apply the linear classifier to the feature columns and determine the accuracy, AUC and other evaluative metrics towards each of the different wealth outcomes. 
