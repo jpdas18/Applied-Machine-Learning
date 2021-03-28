@@ -11,6 +11,9 @@
 - [Convolutions Exercise](https://jpdas18.github.io/Applied-Machine-Learning/Convolutions_Feb24_Exercise.html)
 - [Feb 24](https://jpdas18.github.io/Applied-Machine-Learning/Feb_24_Exercise.html)
 
+### Module 2:
+- [March 28](https://jpdas18.github.io/Applied-Machine-Learning/March28.html)
+
 ## Projects
 - [Mini Project 1](https://jpdas18.github.io/Applied-Machine-Learning/Mini_Project_1.html)
 - [Project 1](https://jpdas18.github.io/Applied-Machine-Learning/Project_1.html)
