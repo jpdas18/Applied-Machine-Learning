@@ -9,6 +9,8 @@
 ![plot](ploteth.png)
 ##### I intended to use complete raster data with 100x100m resolution for the whole country for the project. However, I ran into difficulties related to the size of the data, so I decided to study a subdivision. I chose to focus on the region Afar, located in the northeastern Ethiopia. Below is a map of Ethiopia provided by CARE, a humanitarian organization, that highlights afar (in light orange), shows its relation to the capital, and lists some interesting facts about it.
 ![plot](afar.png)
+##### Below is a graphic showing Afar and the subdivisions within Afar.
+![plot](afar_adm3.png)
 ##### Using two machine learning methods, predict population values at 100 x 100 meter resolution throughout your selected country. I chose to apply a simple linear model as well as a random forest model.
 #### Validate the two models using different methods presented in this class. 
 #### Write a report assessing the two approaches and which of the two models was more accurate.
