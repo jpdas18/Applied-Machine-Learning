@@ -18,3 +18,4 @@
 - [Mini Project 1](https://jpdas18.github.io/Applied-Machine-Learning/Mini_Project_1.html)
 - [Project 1](https://jpdas18.github.io/Applied-Machine-Learning/Project_1.html)
 - [Project 2](https://jpdas18.github.io/Applied-Machine-Learning/Project_2.html)
+- [Project 3](https://jpdas18.github.io/Applied-Machine-Learning/Project_3.html)
