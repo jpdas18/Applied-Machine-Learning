@@ -24,7 +24,9 @@
 #### The sum of the population sums from the model equals 1809074. The sum of the population is 101017113, which is quite a bit bigger. It seems like model is severely underpredicting the population counts, but I do not think this is the case. I think the reason for this great disparity is because the predicted sum is only for the Afar region but the actual sum includes all of Ethiopia. According to Google, the Afar region has approximately 1.8 million residents, meaning the model is not far from its mark. 
 
 ##### Model 2) Random Forest Model
-##### I used a random forest regression model ith 500 trees that predicted the population using the same variables as the regression model (sum of water, dst011, dst040, dst130, dst140, dst150, dst160, dst190, dst200, topo, slope, ntl). The R^2 for the model is 82.39, which is not bad at all. 
+##### I used a random forest regression model ith 500 trees that predicted the population using the same variables as the regression model (sum of water, dst011, dst040, dst130, dst140, dst150, dst160, dst190, dst200, topo, slope, ntl). The R^2 for the model is 82.39, which is fairly high for a real-world model, although it could realistically be improved further. 
+
+##### Below is a plot showing how error changes with the number of trees in the model.
 
 #### Validate the two models using different methods presented in this class. 
 #### Write a report assessing the two approaches and which of the two models was more accurate.
