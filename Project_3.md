@@ -25,3 +25,8 @@
 #### Validate the two models using different methods presented in this class. 
 #### Write a report assessing the two approaches and which of the two models was more accurate.
 #### Be sure to account for spatial variation throughout your selected location and provide substantive explanations for why those variations occurred.
+
+##### References:
+https://www.careinternational.org.uk/transforming-lives-afar-region-ethiopia
+https://www.britannica.com/place/Ethiopia
+https://www.cia.gov/the-world-factbook/countries/ethiopia/#geography
