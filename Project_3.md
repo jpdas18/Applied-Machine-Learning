@@ -53,3 +53,4 @@
 https://www.careinternational.org.uk/transforming-lives-afar-region-ethiopia
 https://www.britannica.com/place/Ethiopia
 https://www.cia.gov/the-world-factbook/countries/ethiopia/#geography
+http://www.ethiodemographyandhealth.org/Afar.html
