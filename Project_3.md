@@ -21,7 +21,7 @@
 ##### Below is a plot showing the difference between the actual population sums and those predicted by the model. It appears that the model has slightly underpredicted the population.
 ![plot](diffsums.png)
 #### Below is a 3D visualization demonstrating the predictions versus actual population counts.
-![plot](lrdiffsums.png)
+![plot](lrdiffsums3D.png)
 ##### When I first ran the model, I encountered the following issue: The sum of the population sums from the model equals 1809074. The sum of the population is 101017113, which is quite a bit bigger. It seems like model is severely underpredicting the population counts, but I do not think this is the case. I think the reason for this great disparity is because the predicted sum is only for the Afar region but the actual sum includes all of Ethiopia. According to Google, the Afar region has approximately 1.8 million residents, meaning the model is not far from its mark. 
 ##### However, upon running it again and filtering for Afar properly, I found that the model predicted a total subdivision population of 1783250.. The actual population according to eth_ppp_2019, when filtered correctly, equals 1783304. These numbers are not very far apart, indicating that the model is fairly good at predicting the total population of Afar. However, upon looking at the total error for the model, as defined by the absolute value of the sum of all the differences between actual and predicted population counts, the model was not very successful predicting populations at a more local level within Afar. The sum of the errors that are the differences between predictions and actual populations equals 1497986, which is fairly large. 
 
