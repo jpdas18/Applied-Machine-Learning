@@ -21,17 +21,18 @@
 ##### Below is a plot showing the difference between the actual population sums and those predicted by the model. It appears that the model has slightly underpredicted the population. However, the plot does show that the model consistently underpredicted across the region, meaning that the error was with the model itself and not a result of regional differences within Afar.
 ![plot](diffsums.png)
 
-#### Below is a 3D visualization demonstrating the predictions versus actual population counts.
+#### Below is a 3D visualization demonstrating the predictions versus actual population counts. There is a consistent clustering of lines below the model, demonstrating consistent under predictions of the model thorughout the region. Most of the population are pastoralists, some of whom are nomadic, so it is possible that the lack of urbanization and prominent city centers in the region causes this phenomenon of consistent underprediction. 
 ![plot](lrdiffsums3D.png)
 
-#### Below is a 3D visualization of mean absolute error of the model across the region.
+#### Below is a 3D visualization of mean absolute error of the model across the region. 
 ![plot](lr_mae.png)
 
+
 ##### When I first ran the model, I encountered the following issue: The sum of the population sums from the model equals 1809074. The sum of the population is 101017113, which is quite a bit bigger. It seems like model is severely underpredicting the population counts, but I do not think this is the case. I think the reason for this great disparity is because the predicted sum is only for the Afar region but the actual sum includes all of Ethiopia. According to Google, the Afar region has approximately 1.8 million residents, meaning the model is not far from its mark. 
-##### However, upon running it again and filtering for Afar properly, I found that the model predicted a total subdivision population of 1783250.. The actual population according to eth_ppp_2019, when filtered correctly, equals 1783304. These numbers are not very far apart, indicating that the model is fairly good at predicting the total population of Afar. However, upon looking at the total error for the model, as defined by the absolute value of the sum of all the differences between actual and predicted population counts, the model was not very successful predicting populations at a more local level within Afar. The sum of the errors that are the differences between predictions and actual populations equals 1497986, which is fairly large. 
+##### However, upon running it again and filtering for Afar properly, I found that the model predicted a total subdivision population of 1783250.. The actual population according to eth_ppp_2019, when filtered correctly, equals 1783304. These numbers are not very far apart, indicating that the model is fairly good at predicting the total population of Afar. However, upon looking at the total error for the model, as defined by the absolute value of the sum of all the differences between actual and predicted population counts, the model was not very successful predicting populations at a more local level within Afar. The sum of the errors that are the differences between predictions and actual populations equals 1497986, which is fairly large. Overall, the model is both useful and consistent. However, there is room for improvement. 
 
 ##### Model 2) Random Forest Model
-##### I used a random forest regression model ith 500 trees that predicted the population using the same variables as the regression model (sum of water, dst011, dst040, dst130, dst140, dst150, dst160, dst190, dst200, topo, slope, ntl). The R^2 for the model is 82.39, which is fairly high for a real-world model, although it could realistically be improved further. 
+##### I used a random forest regression model with 500 trees that predicted the population using the same variables as the regression model (sum of water, dst011, dst040, dst130, dst140, dst150, dst160, dst190, dst200, topo, slope, ntl). The R^2 for the model is 82.39, which is fairly high for a real-world model, although it could realistically be improved further. 
 
 ##### Below is a plot showing how error changes with the number of trees in the model.
 ![plot](randomforestmodel.png)
@@ -45,7 +46,7 @@
 ##### Below is a plot of the difference between the model predictions and actual population values.
 ![plot](rfdiffsums.png)
 ##### Based on the shade of green, which is close if not identical to that which matches up with the zero marker in the color key, this model has performed better than the linear model. Although it still seems to underpredict population slightly, it does not underpredict as much as the linear model.
-
+#### Based on its high R^2 value and the plot of the differences between actual and predicted population sums, I would argue that the random forests model is the better of the two. It is likely that selecting variables more carefully and changing the number of trees used could further ipmprove the random forests model as well. 
 
 ##### References:
 https://www.careinternational.org.uk/transforming-lives-afar-region-ethiopia
