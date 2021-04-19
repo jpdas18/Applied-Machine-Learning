@@ -23,7 +23,7 @@
 
 ##### Although the Afar region is not known for any urban ongoings, it does appear that there is a higher population density towards the northwest. I will keep this in mind when analyzing model performance.
 
-##### Below is a plot showing the difference between the actual population sums and those predicted by the model. It appears that the model has slightly underpredicted the population. However, the plot does show that the model consistently underpredicted across the region, meaning that the error was with the model itself and not a result of regional differences within Afar.
+##### Below is a plot showing the difference between the actual population sums and those predicted by the model. It appears that the model has slightly underpredicted the population. The plot does show that the model fairly consistently underpredicted across the region, meaning that the error was with the model itself and not a result of regional differences within Afar.  
 ![plot](diffsums.png)
 
 #### Below is a 3D visualization demonstrating the predictions versus actual population counts. There is a consistent clustering of lines below the model, demonstrating consistent under predictions of the model thorughout the region. Most of the population are pastoralists, some of whom are nomadic, so it is possible that the lack of urbanization and prominent city centers in the region causes this phenomenon of consistent underprediction. 
