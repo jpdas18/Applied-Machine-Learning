@@ -19,7 +19,7 @@
 ![plot](lrpopsums.png)
 
 ##### I decided to compare that with a map of Afar demonstrating population density to ensure that my methodology and filtering were correct, and it appears that they match up.
-![plot](afarpopdensity.png)
+![plot](popdensityafar.png)
 
 ##### Although the Afar region is not known for any urban ongoings, it does appear that there is a higher population density towards the northwest. I will keep this in mind when analyzing model performance.
 
