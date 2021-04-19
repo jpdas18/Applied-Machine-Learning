@@ -29,7 +29,7 @@
 #### Below is a 3D visualization demonstrating the predictions versus actual population counts. There is a consistent clustering of lines below the model, demonstrating consistent under predictions of the model thorughout the region. Most of the population are pastoralists, some of whom are nomadic, so it is possible that the lack of urbanization and prominent city centers in the region causes this phenomenon of consistent underprediction. 
 ![plot](lrdiffsums3D.png)
 
-##### Below is a 3D visualization of mean absolute error of the model across the region. 
+##### Below is a 3D visualization of root mean squared error of the model across the region.
 ![plot](lr_mae.png)
 
 
