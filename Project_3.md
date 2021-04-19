@@ -50,6 +50,14 @@
 
 ##### Below is a plot of the difference between the model predictions and actual population values.
 ![plot](rfdiffsums.png)
+
+##### Below is a 3D visualization of the model's perfomance, demonstrating that the model mostly underpredicted population values but it did overpredict in some regions. 
+![plot](rf3d.png)
+
+##### Below is a 3D visualization of root mean squared error of the model across the region.
+![plot](rfrmse.png)
+
+
 ##### Based on the shade of green, which is close if not identical to that which matches up with the zero marker in the color key, this model has performed better than the linear model. Although it still seems to underpredict population slightly, it does not underpredict as much as the linear model.
 ##### The model validation technique used is absolute error; that is, the difference between the predictions and the actual values. This can be visualized using the plots of the differences between the predictions and values, shown above. These plots are slightly different shades of greens, indicating slightly different levels of under prediction. In the cases of both the models, the plots are fairly consistent in the amount that they underpredict; this is likely because Afar does not have any large cities. Despite a regional population of nearly 2 million, the largest city in Afar has only one hundred thousand people. Afar does not possess major urban centers that would skew the model; most of the land is used for agricultural purposes, and most of the Afar people are pastoralists. 
 ##### The random forests model underpredicted less than the linear model. Based on its high R^2 value and the plot of the differences between actual and predicted population sums, I would argue that the random forests model is the better of the two. It is likely that selecting variables more carefully and changing the number of trees used could further ipmprove the model as well. 
