@@ -46,7 +46,7 @@
 ##### Below is a plot of the difference between the model predictions and actual population values.
 ![plot](rfdiffsums.png)
 ##### Based on the shade of green, which is close if not identical to that which matches up with the zero marker in the color key, this model has performed better than the linear model. Although it still seems to underpredict population slightly, it does not underpredict as much as the linear model.
-##### Based on its high R^2 value and the plot of the differences between actual and predicted population sums, I would argue that the random forests model is the better of the two. It is likely that selecting variables more carefully and changing the number of trees used could further ipmprove the random forests model as well. 
+##### The model validation technique used is absolute error; that is, the difference between the predictions and the actual values. This can be visualized using the plots of the differences between the predictions and values, shown above. These plots are slightly different shades of greens, indicating slightly different levels of under prediction. The random forests model underpredicted less than the linear model. Based on its high R^2 value and the plot of the differences between actual and predicted population sums, I would argue that the random forests model is the better of the two. It is likely that selecting variables more carefully and changing the number of trees used could further ipmprove the model as well. 
 
 ##### References:
 https://www.careinternational.org.uk/transforming-lives-afar-region-ethiopia
