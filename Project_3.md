@@ -46,10 +46,6 @@
 ![plot](rfdiffsums.png)
 ##### Based on the shade of green, which is close if not identical to that which matches up with the zero marker in the color key, this model has performed better than the linear model. Although it still seems to underpredict population slightly, it does not underpredict as much as the linear model.
 
-##### Validate the two models using different methods presented in this class. 
-##### Write a report assessing the two approaches and which of the two models was more accurate.
-##### Be sure to account for spatial variation throughout your selected location and provide substantive explanations for why those variations occurred.
-
 
 ##### References:
 https://www.careinternational.org.uk/transforming-lives-afar-region-ethiopia
