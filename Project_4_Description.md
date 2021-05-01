@@ -4,6 +4,6 @@
 
 #### I previously worked on a long short term memory model which trains on list of names and the associated ethnicities or countries of origin and then can be used to classify names inputted. For this project, I have several potential ideas to either develop a completely new method with which to to compare the existing model or perhaps improve on the long short term memory model I have already used.
 
-#### A description of data: I am using 
+#### A description of data: I am using a dataset which includes 148,275 names scraped from Wikipedia. These names are already classified by ethnic grouping. The ethnic groups are: 'GreaterEuropean,WestEuropean,Germanic', 'GreaterAfrican,Muslim', 'GreaterEuropean,WestEuropean,Nordic', 'GreaterEuropean,WestEuropean,Hispanic', 'GreaterEuropean,Jewish','GreaterAfrican,Africans', 'Asian,GreaterEastAsian,Japanese', 'GreaterEuropean,WestEuropean,French','GreaterEuropean,EastEuropean', 'GreaterEuropean,British','Asian,GreaterEastAsian,EastAsian', 'Asian,IndianSubContinent','GreaterEuropean,WestEuropean,Italian'. I have condensed all the variations of European ethnic grouping to a single European group. 
 
-#### Machine learning method: 
+#### Machine learning method: I am planning to use either a logistic regression classifer or boosted trees model. However, I am still doing research and playing around with different model ideas.
