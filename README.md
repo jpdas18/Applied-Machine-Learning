@@ -16,6 +16,7 @@
 
 ### Module 4:
 - [Project 4 Description](https://jpdas18.github.io/Applied-Machine-Learning/Project_4_Description.html)
+- [Project 4 Writeup for May 7]
 ## Projects
 - [Mini Project 1](https://jpdas18.github.io/Applied-Machine-Learning/Mini_Project_1.html)
 - [Project 1](https://jpdas18.github.io/Applied-Machine-Learning/Project_1.html)
