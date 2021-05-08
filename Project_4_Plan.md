@@ -215,6 +215,10 @@ model inspired my use of it for this name classification project. Although the r
 question differs, the general goal of using a model to determine the ethnicities
 associated with names in a dataset is the same."
 
+#### For this project, I thought it would be interesting to apply a new method, which I learned about and used in this Machine Learning class: the boosted trees model. I wanted to include the context from my paper to give some background on methods already implemented. Now I will discuss some similar implementations of the boosted trees model. Although based on my literature review, the model has not been used exactly the way I plan to use it, the following articles have provided a general framework.
+
+#### One informal article I found online detailed the application of a boosted trees model for optimizing in the field of natural language processing (NLP). The researcher, Thomas Atanasov, used Kaggle data of Honda reviews to create a model which would determine ratings based on the text contained in the review. The dataset contained three variables per observation: an id, a review (text), and rating (1-5). Atanasov utilized XGBoost, an "optimized distributed gradient boosting library" which "implements machine learning algorithms under the Gradeient Boosting Framework." He optimized using the arguments "max_depth" which refers to the max depth of a tree and eta, which prevents overfitting by altering weights. Atanasov's training set contained 10k observations with a feature of the text from the review and the target was the rating (a number one through five). My goal is similar, in a sense, to Atanasov's: my feature is also textual (names) and my target also contains several categories (ethnicity), although my categories are not numerical. Atanasov then 
+
 #### Sources: 
 - https://link-springer-com.proxy.wm.edu/article/10.1007/s11192-012-0681-1
 - https://rstudio-pubs-static.s3.amazonaws.com/430967_3343f1ee97234612b78582c49c49007e.html
