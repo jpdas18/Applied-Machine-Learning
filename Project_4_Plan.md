@@ -1,9 +1,38 @@
 # Project 4 Plan - Due May 7
 #### Final Project Description
 
-#### Problem Statement: I would like to contribute to existing research focused on developing a name classifier which uses machine learning techniques to classify names according to ethnicity. I began working on this research project during in an independent study in computational sociology that I pursued with Professor Bakhtiari, a professor in William & Mary's sociology department. This research is part of his overarching investigation into health populations for Arab populations in the United States. The problem inspiring the development of the existing method is the difficulty in studying health outcomes for Arab populations due to a lack of specific ethnicity data in existing administrative records. That is, people of Arab descent are often classified as "white", so unless they are foreign born and their country of origin is listed, it is nearly impossible to study health outcomes for this population using records - unless one is able to employ the use of a classification method. 
+#### Problem Statement: I would like to contribute to existing research focused on developing a name classifier which uses machine learning techniques to classify names according to ethnicity. I began working on this research project during in an independent study in computational sociology that I pursued with Professor Bakhtiari, a professor in William & Mary's sociology department. This research is part of his overarching investigation into health populations for Arab populations in the United States. The problem inspiring the development of the existing method is the difficulty in studying health outcomes for Arab populations due to a lack of specific ethnicity data in existing administrative records. That is, people of Arab descent are often classified as "white", so unless they are foreign born and their country of origin is listed, it is nearly impossible to study health outcomes for this population using records - unless one is able to employ the use of a classification method.  Below is a snippet from a paper I wrote which explains the need to develop this classifier specifically to study the efffect of racism at the population-level for Americans of Arab desent.
 
-#### I previously worked on a long short term memory model which trains on list of names and the associated ethnicities or countries of origin and then can be used to classify names inputted. For this project, I have several potential ideas to either develop a completely new method with which to to compare the existing model or perhaps improve on the long short term memory model I have already used.
+"This research is important because it contributes to knowledge on health
+outcomes for understudied populations including people of Middle Eastern, North
+African, and South Asian descent who are living in America. It is important to
+understand the health outcomes for these populations because they are presented with
+unique health barriers and stressors such as discrimination based on racialization and
+as a result face unique health disparities. The tool developed in this research will serve
+future researchers in their studies of health disparities.
+More specifically, this research contributes to knowledge about how
+discrimination has affected these populations. After the September 11 (hereafter
+referred to as 9/11) attacks, people who were racialized as Muslim or Arab faced severe
+social consequences including discrimination, harassment, violence, and hate crimes
+(Lauderdale 2006; Bakhtiari 2020). Birth outcomes which have been used as a measure
+of discrimination include preterm births and low weight births; sociologists have
+
+theorized and to some extent demonstrated that the stress induced by discrimination
+can cause both, and both negatively impact the child’s health, further perpetuating
+health disparities (Lauderdale 2006).  It is important to study the impact of
+discrimination-induced stress on health to do justice to the scholarship about the post-
+9/11 time period and to help people better understand the effects of anti-Arab and anti-
+Muslim sentiment on both adults and newborns in America.
+The objective of this study is to create a name classifier which will aid in the
+investigation of birth outcomes before and after 9/11. This name classifier will be helpful
+for this project. It may also be helpful for other future projects related to classification of
+ethnicities. It could be applied to same or different groups and contexts where ethnicity
+data is unavailable."
+
+
+#### I previously worked on a long short term memory model which trains on list of names and the associated ethnicities or countries of origin and then can be used to classify names inputted. 
+
+#### For this project, I have several potential ideas to either develop a completely new method with which to to compare the existing model or perhaps improve on the long short term memory model I have already used.
 
 #### A description of data: I am using a dataset which includes 148,275 names scraped from Wikipedia and the race or ethnicity associated with each name. There are three variables for each observation in the dataset: first name, last name, and race/ethnicity classification. This dataset was collected by Steven Skiena's research team with the same end goal of building a name classifier. The classes of race/ethnicity are: 'GreaterEuropean,WestEuropean,Germanic', 'GreaterAfrican,Muslim', 'GreaterEuropean,WestEuropean,Nordic', 'GreaterEuropean,WestEuropean,Hispanic', 'GreaterEuropean,Jewish','GreaterAfrican,Africans', 'Asian,GreaterEastAsian,Japanese', 'GreaterEuropean,WestEuropean,French','GreaterEuropean,EastEuropean', 'GreaterEuropean,British','Asian,GreaterEastAsian,EastAsian', 'Asian,IndianSubContinent','GreaterEuropean,WestEuropean,Italian'. I have condensed all the variations of European ethnic grouping to a single European class because I think it is ridiculous to have such a high degree of specificity for the European class and no specificity for the other classes. Perhaps this is a result of the dataset being skewed towards European names, but to me it seemed almost racist when there are equally many or even more categories within other classes (for example, the Asian or African classes could have been subdivided as well). 
 
@@ -27,7 +56,7 @@ sdf['name_last_name_first'] = sdf['name_last'] + ' ' + sdf['name_first']
 
 X_train,  X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=21, stratify=y)
 
-#### I will then modify the following boosted trees model to take my data as inputs and then eventually predict the appropriate ethnicity given a first and last name.
+#### I will then modify the following boosted trees model to take my data as inputs and then eventually predict the appropriate ethnicity given a first and last name. I will start by using a subset of the Wikipedia dataset and trying to predict one class of ethnicity and eventually I will expand the model so that it will be able to predict multiple classes.
 
 fc = tf.feature_column
 CATEGORICAL_COLUMNS = ['first_name', 'last_name']
@@ -132,6 +161,59 @@ y = np.array(sdf.race.astype('category').cat.codes)
 
 
 #### Preliminary Assessment: 
+
+#### The inspiration for this project is the research I have assisted with in the sociology department for the past academic year (2020-2021). Below is another snippet from the paper I wrote and referenced above; the following snippet provides some background on previous approaches that researchers have taken to address the issue of name classification.
+
+"Torvik and Agarwal (2016) developed Ethnea, a method of name classification
+using a nearest neighbors approach, on a data set containing millions of records from
+the PubMed database. Records include author names coupled with the country or
+countries their article is associated with. Unlike other classification methods, there is no
+machine learning involved. Rather, the model uses the dataset of author names which
+
+are respectively mapped to countries of publication. They use a logistic regression
+model to map the country distribution to ethnicities. Torvik and Agarwal (2016) were
+able to generate predictions for millions of first and last names that were found in the
+database. To determine the ethnicity of a first and last name combination, the method
+would combine the probabilities and respective ethnicities associated with each. As a
+result, millions of names can be classified using the instances present in the data set.
+Although it accomplishes a similar goal, the Ethnea method is not appropriate for this
+research because its classifications tend to represent nationality rather than ancestry,
+due to the nature of the PubMed data it was developed from.
+Ye et. al (2017) worked to develop a sophisticated nationality and ethnicity
+classifier to aid research which requires this demographic information that is often
+unavailable in data sources. Names can be used as an indicator of ethnicity and
+nationalities, and there are various methods to develop models which can accurately
+classify new names. Ye et. al (2017) used the idea of homophily and name embeddings
+to develop NamePrism, a classifier which classified names according to nationality and
+ethnicity. The idea of homophily is that people interact with others similar to them. Ye et
+al. (2017) built this classifier using an online company’s list of 57 million contact lists and
+assortment of 74 million names. The name embeddings were developed from the
+contact lists and based on the idea of homophily; they can be used to map out names
+according to nationality. NamePrism includes thirty-nine nationalities which together
+represent more than 90% of the world population (Ye et al. 2017). It was extremely
+successful; it was an improvement upon similar classifiers that had previously been
+used (Ye et al. 2017). The researchers applied it to the followers of Twitter celebrities to
+
+illustrate the ethnic makeups of different celebrities’ followers. Although NamePrism
+could theoretically have been used to answer this research question, upon some
+preliminary testing, it was unable to classify Middle Eastern and North African names
+adequately enough for the purposes of this study.
+Sood and Laohaprapanon (2018) sought to examine racial inequality in the news
+and political campaigns. To accomplish this, they decided they needed a method to
+classify names based on race and ethnicity. They used the 2017 Florida Voter
+Registration Data and Wikipedia to train a Long Short Term Memory Network model to
+predict the race and ethnicity associated with the name based on character sequences.
+The voter registration data contained the name and associated race of nearly 13 million
+voters (Sood and Laohaprapanon 2018). The Wikipedia data was collected by another
+research team for a similar classification project; the team scraped Wikipedia and
+collected 140,000 names with the associated races (Sood and Laohaprapanon). The
+Long Short Term Memory Network model’s out of sample precision for a model using
+full names is .83. Using campaign finance data, they applied the model to predict the
+race of donors to better understand the proportion of each racial group which donates to
+campaigns. Sood and Laohapranon (2018)’s work with the Long Short Term Memory
+model inspired my use of it for this name classification project. Although the research
+question differs, the general goal of using a model to determine the ethnicities
+associated with names in a dataset is the same."
 
 #### Sources: 
 - https://link-springer-com.proxy.wm.edu/article/10.1007/s11192-012-0681-1
