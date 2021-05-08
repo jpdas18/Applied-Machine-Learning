@@ -225,7 +225,13 @@ associated with names in a dataset is the same."
 - testing precision = 99.60%
 #### The proposed model uses a binary classification approach. It predicts "whether a paper is a true paper of our focal scientist or a false paper of homonymous authors." To do this, they honed their previously mentioned four-step method. The steps incude:
 1) "downloading paper records using a name and affiliation match" (which in a sense is similar to my project, which requires a match between name and ethnicity)
-2) "constructs a pairwise cosine similarity matrices for all papers under each focal author name, and then uses Eigen-decomposition and averaging to construct a variety of numerical similarity scores to meausre the the distance between one paper and all other papers under the same name" (operating under the assumption that 
+2) "constructs a pairwise cosine similarity matrices for all papers under each focal author name, and then uses Eigen-decomposition and averaging to construct a variety of numerical similarity scores to measure the the distance between one paper and all other papers under the same name" (operating under the assumption that the authors' publications share characteristics/are similar)
+3) "eliminate a small number of authors with very high false rates"
+4) "use boosted trees for classifying true and false papers for the remaining authors"
+#### This implementation of the boosted trees model makes me wonder if I could alter my model so instead of predicting for each name WHICH class it belongs to, it could predict WHETHER or not it belongs to an ethnicity. For example, instead of ouputting "Smith" = "European", it would output a true/false classification for each ethnicty. That is, SMITH: European = TRUE, Asian = FALSE, so on so forth. 
+#### Their theory behind the boosted trees model was that they could keep dividing the feature space into smaller and smaller sub-regions. They classified their issues with the method as deciding the splitting point and how to control the size of the tree; I will likely have similar issues with my method.
+#### The researchers classified 4253 papers of the 100 authors by hand and then pplied the boosted trees model to a small dataset (n = 2835) to train it and use the remaining papers (1418) to test it. 
+#### They mentioned in their paper that the power of the boosted trees classification is dependent on most of the papers being under true names. I wonder if perhaps the boosted trees classifier would best be implemented as a tool to augment the long short term memory model currently being used rather than to replace it.
 
 #### Sources: 
 - https://link-springer-com.proxy.wm.edu/article/10.1007/s11192-012-0681-1
