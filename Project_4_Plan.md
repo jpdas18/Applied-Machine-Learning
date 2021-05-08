@@ -20,17 +20,14 @@ sdf['name_first'] = sdf.name_first.str.normalize('NFKD').str.encode('ascii', err
 sdf['name_last'] = sdf.name_last.str.normalize('NFKD').str.encode('ascii', errors='ignore').str.decode('utf-8')
 
 sdf.groupby('race').agg({'name_first': 'count'})
-
-# concat last name and first name
 sdf['name_last_name_first'] = sdf['name_last'] + ' ' + sdf['name_first']
 
 #### This will give me a dataset of over 140,000 observations with first and last names and race/ethnicity associations. 
 #### I will then split the Wikipedia dataset to create training and testing data.
 
-# Split train and test dataset
 X_train,  X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=21, stratify=y)
 
-# I will then modify the following boosted trees model to take my data as inputs and then eventually predict the appropriate ethnicity given a first and last name.
+#### I will then modify the following boosted trees model to take my data as inputs and then eventually predict the appropriate ethnicity given a first and last name.
 
 fc = tf.feature_column
 CATEGORICAL_COLUMNS = ['first_name', 'last_name']
@@ -41,11 +38,9 @@ def one_hot_cat_column(feature_name, vocab):
                                                  vocab))
 feature_columns = []
 for feature_name in CATEGORICAL_COLUMNS:
-  # Need to one-hot encode categorical features.
   vocabulary = dftrain[feature_name].unique()
   feature_columns.append(one_hot_cat_column(feature_name, vocabulary))
 
-# Use entire batch since this is such a small dataset.
 NUM_EXAMPLES = len(y_train)
 
 def make_input_fn(X, y, n_epochs=None, shuffle=True):
@@ -53,14 +48,12 @@ def make_input_fn(X, y, n_epochs=None, shuffle=True):
     dataset = tf.data.Dataset.from_tensor_slices((X.to_dict(orient='list'), y))
     if shuffle:
       dataset = dataset.shuffle(NUM_EXAMPLES)
-    # For training, cycle thru dataset as many times as need (n_epochs=None).
     dataset = (dataset
       .repeat(n_epochs)
       .batch(NUM_EXAMPLES))
     return dataset
   return input_fn
-
-# Training and evaluation input functions.
+  
 train_input_fn = make_input_fn(dftrain, y_train)
 eval_input_fn = make_input_fn(dfeval, y_eval, shuffle=False, n_epochs=1)
 
@@ -68,25 +61,17 @@ params = {
   'n_trees': 50,
   'max_depth': 3,
   'n_batches_per_layer': 1,
-  # You must enable center_bias = True to get DFCs. This will force the model to
-  # make an initial prediction before using any features (e.g. use the mean of
-  # the training labels for regression or log odds for classification when
-  # using cross entropy loss).
   'center_bias': True
 }
 
 est = tf.estimator.BoostedTreesClassifier(feature_columns, **params)
-# Train model.
-est.train(train_input_fn, max_steps=100)
 
-# Evaluation.
 results = est.evaluate(eval_input_fn)
 clear_output()
 pd.Series(results).to_frame()
 
 in_memory_params = dict(params)
 in_memory_params['n_batches_per_layer'] = 1
-# In-memory input_fn does not use batching.
 def make_inmemory_train_input_fn(X, y):
   y = np.expand_dims(y, axis=1)
   def input_fn():
@@ -94,7 +79,6 @@ def make_inmemory_train_input_fn(X, y):
   return input_fn
 train_input_fn = make_inmemory_train_input_fn(dftrain, y_train)
 
-# Train the model.
 est = tf.estimator.BoostedTreesClassifier(
     feature_columns, 
     train_in_memory=True, 
@@ -107,12 +91,10 @@ print(est.evaluate(eval_input_fn))
 
 NGRAMS = 2
 
-# build n-gram list
 vect = CountVectorizer(analyzer='char', max_df=0.3, min_df=3, ngram_range=(NGRAMS, NGRAMS), lowercase=False) 
 a = vect.fit_transform(sdf.name_last_name_first)
 vocab = vect.vocabulary_
 
-# sort n-gram by freq (highest -> lowest)
 words = []
 for b in vocab:
     c = vocab[b]
@@ -136,10 +118,8 @@ def find_ngrams(text, n):
         wi.append(idx)
     return wi
 
-# build X from index of n-gram sequence
 X = np.array(sdf.name_last_name_first.apply(lambda c: find_ngrams(c, NGRAMS)))
 
-# check max/avg feature
 X_len = []
 for x in X:
     X_len.append(len(x))
@@ -150,8 +130,11 @@ avg_feature_len = int(np.mean(X_len))
 print("Max feature len = %d, Avg. feature len = %d" % (max_feature_len, avg_feature_len))
 y = np.array(sdf.race.astype('category').cat.codes)
 
-# Split train and test dataset
-X_train,  X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=21, stratify=y)
-
 
 #### Preliminary Assessment: 
+
+#### Sources: 
+- https://link-springer-com.proxy.wm.edu/article/10.1007/s11192-012-0681-1
+- https://rstudio-pubs-static.s3.amazonaws.com/430967_3343f1ee97234612b78582c49c49007e.html
+- https://github.com/appeler/ethnicolr/tree/master/ethnicolr/data/wiki
+- https://github.com/appeler/ethnicolr
