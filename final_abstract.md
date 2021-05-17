@@ -5,8 +5,9 @@
 #### This problem was inspired by Professor Bakhtiari medical sociology research in William & Mary's sociology department, which I work on as a research assistant focused on the computational side of things. In my capacity as a research assistant, I have applied a Naive Bayes classifier and Long Short Term Memory model to classify names. For this project, I decided I wanted to apply a different method to see if it would work and if it could improve upon the previous two. 
 
 #### Description of the data
-#### I chose a dataset which contains
+#### I am using a dataset which includes 148,275 names scraped from Wikipedia and the race or ethnicity associated with each name. There are three variables for each observation in the dataset: first name, last name, and race/ethnicity classification. This dataset was collected by Steven Skiena’s research team with the same end goal of building a name classifier. The classes of race/ethnicity are: ‘GreaterEuropean,WestEuropean,Germanic’, ‘GreaterAfrican,Muslim’, ‘GreaterEuropean,WestEuropean,Nordic’, ‘GreaterEuropean,WestEuropean,Hispanic’, ‘GreaterEuropean,Jewish’,’GreaterAfrican,Africans’, ‘Asian,GreaterEastAsian,Japanese’, ‘GreaterEuropean,WestEuropean,French’,’GreaterEuropean,EastEuropean’, ‘GreaterEuropean,British’,’Asian,GreaterEastAsian,EastAsian’, ‘Asian,IndianSubContinent’,’GreaterEuropean,WestEuropean,Italian’. I have condensed all these classifications to three classes: Asian, European, and African. These larger groups include all the smaller ethnic groups within; for example, European includes everything with "GreaterEuropean" and Asian includes everything with "Asian." I thought it would be simpler for the model to classify names that were Asian, European, or African.
 
 #### Specification for the applied machine learning model
+#### I decided to use a recurrent neural network (RNN) for my model.
 
 #### Assessment of model performance
