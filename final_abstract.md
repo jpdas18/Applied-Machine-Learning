@@ -11,6 +11,6 @@
 #### I decided to base my model on an example of an RNN from TensorFlow.org for application to texts. The model is a sequential model with an embedding layer, a one-dimensional convolutional layer, a global max pooling layer, and a dense layer. The model uses a binary cross-entropy loss function and an adam optimizer.
 
 #### Assessment of model performance
-#### The model performed incredibly well. After three epochs, the accuracy was 92.11%. Model evaluation after training demonstrated an accuracy of 97.76%. 
+#### The model performed incredibly well. After three epochs, the accuracy was 91.72%.
 #### Moreover, upon exporting the model and using it to predict example last names such as "Smith" (European) and "Wu", the model performed correctly every time. 
 #### Ultimately, this model was a success. I am excited to see how it can fit into the grand scheme of the research project classifying names of Americans of Arab descent to study population level health outcomes.
