@@ -12,6 +12,7 @@
 
 #### Assessment of model performance
 #### The model performed incredibly well. After three epochs, the accuracy was 91.72%.
+![plot](final2.png)
 #### Moreover, upon exporting the model and using it to predict example last names such as "Smith" (European) and "Wu", the model performed correctly every time. 
 ![plot](final1.png)
 #### Ultimately, this model was a success. I am excited to see how it can fit into the grand scheme of the research project classifying names of Americans of Arab descent to study population level health outcomes.
