@@ -23,4 +23,6 @@
 - [Project 2](https://jpdas18.github.io/Applied-Machine-Learning/Project_2.html)
 - [Project 3](https://jpdas18.github.io/Applied-Machine-Learning/Project_3.html)
 - [Final Project Abstract](https://jpdas18.github.io/Applied-Machine-Learning/final_abstract.html)
-- [Final Project](https://youtu.be/C51WbCM9zrk)
+- [Final Project Code](https://colab.research.google.com/drive/1GLSRvNaGJ5u4bnG5_-cZMCwgbP02aaAd?usp=sharing)
+- [Final Project Slides](https://docs.google.com/presentation/d/1ZftNpopY0DmxFi56PlmOpju8e9fSQ_O2W4e-Gs3j-Tw/edit?usp=sharing)
+- [Final Project Video](https://youtu.be/C51WbCM9zrk)
