@@ -23,4 +23,4 @@
 - [Project 2](https://jpdas18.github.io/Applied-Machine-Learning/Project_2.html)
 - [Project 3](https://jpdas18.github.io/Applied-Machine-Learning/Project_3.html)
 - [Final Project Abstract](https://jpdas18.github.io/Applied-Machine-Learning/final_abstract.html)
-- [Final Project]
+- [Final Project](https://youtu.be/C51WbCM9zrk)
